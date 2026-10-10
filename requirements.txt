@@ -1,5 +1,15 @@
-streamlit>=1.50
+# Core engines (exclusion, carbon, recommend, grounding use only the stdlib + these)
 pandas>=2.0
-numpy
-scikit-learn
-joblib
+numpy>=1.26
+pyyaml>=6.0
+
+# Streamlit app
+streamlit>=1.50
+
+# LLM benchmark (scripts/benchmark_llm.py) - optional, only if you call an OpenAI-compatible endpoint
+openai>=1.0
+python-dotenv>=1.0
+
+# Tests
+pytest>=8.0
+jsonschema>=4.0   # enables the contract-conformance tests (they skip without it)

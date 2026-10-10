@@ -183,7 +183,12 @@ class UnsupportedNumber(str):
         if super().__eq__(other) is True:
             return True
         if isinstance(other, (int, float)):
-            return math.isclose(self.value, float(other), rel_tol=1e-3, abs_tol=1e-4)
+            # Match the value as written (400) AND its unit-normalised forms (400k -> 400000).
+            target = float(other)
+            return any(
+                math.isclose(c, target, rel_tol=1e-3, abs_tol=1e-4)
+                for c in expand_candidate_values(self.value, self.unit, self.currency)
+            )
         if isinstance(other, str):
             clean_other = other.replace(",", "").strip()
             clean_self = str(self).replace(",", "").strip()

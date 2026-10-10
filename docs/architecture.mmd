@@ -1,0 +1,20 @@
+flowchart LR
+    D[Data<br/>customers, accounts, transactions, products<br/>synthetic / public] --> FS[Feature store<br/>Customer 360]
+    FS --> TC[Transaction classification<br/>8 exclusive categories]
+    TC --> PM[Propensity models<br/>propensity + confidence + reason codes]
+    PM --> RE[Recommendation engine<br/>product eligibility rules applied]
+    EF[(Emissions factors<br/>units + sources)] --> CE
+    RE --> CE{{Deterministic carbon engine<br/>documented formulas}}
+    RE --> ST[(Structured output JSON<br/>+ evidence + timestamp)]
+    CE --> ST
+    ST --> LLM[LLM insight layer<br/>explains only]
+    LLM --> API[FastAPI]
+    ST --> API
+    API --> UI[Streamlit<br/>customer view + business dashboard]
+
+    classDef ml fill:#dff0d8,stroke:#3c763d;
+    classDef det fill:#d9edf7,stroke:#31708f;
+    classDef llm fill:#fcf8e3,stroke:#8a6d3b;
+    class TC,PM ml;
+    class CE,EF det;
+    class LLM llm;

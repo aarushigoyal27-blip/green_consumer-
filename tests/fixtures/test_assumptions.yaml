@@ -1,0 +1,13 @@
+# Synthetic round numbers so hand calculations are easy. NOT the production assumptions.
+electricity_include_td: {value: true, source: test}
+gp01_pump_price_petrol: {value: 1.50, unit: GBP/litre, source: test}
+gp01_pump_price_diesel: {value: 1.60, unit: GBP/litre, source: test}
+gp01_unknown_fuel_default: {value: petrol, source: test}
+gp03_system_kwp: {value: 4.0, unit: kWp, source: test}
+gp03_yield_kwh_per_kwp: {value: 900, unit: kWh/kWp/yr, source: test}
+gp03_self_consumption_share: {value: 0.5, source: test}
+gp02_reduction_share_electricity: {value: 0.10, source: test}
+gp02_reduction_share_gas: {value: 0.20, source: test}
+gp04_pages_per_statement: {value: 4, source: test}
+gp04_grams_per_page: {value: 5.0, unit: g, source: test}
+gp04_report_paper_carbon: {value: true, source: test}

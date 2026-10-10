@@ -1,0 +1,10 @@
+activity,unit,kg_co2e_per_unit,scope,factor_year,source_sheet,source_row_label,notes
+electricity_generation_kwh,kWh,FILL,2,FILL,UK electricity,FILL exact row label,kg CO2e column
+electricity_td_kwh,kWh,FILL,3,FILL,Transmission and distribution,FILL exact row label,Added to generation when electricity_include_td=true
+natural_gas_gross_cv_kwh,kWh,FILL,1,FILL,Fuels,FILL exact row label,Gross CV - UK bills are gross CV kWh
+petrol_car_avg_km,km,FILL,1,FILL,Passenger vehicles,FILL exact row label,Average car petrol; per km NOT per mile
+diesel_car_avg_km,km,FILL,1,FILL,Passenger vehicles,FILL exact row label,Average car diesel; per km NOT per mile
+bev_avg_km,km,FILL,2,FILL,UK electricity for EVs,FILL exact row label,Average BEV; note whether T&D included
+petrol_litre,litre,FILL,1,FILL,Fuels,FILL exact row label,Petrol (average biofuel blend)
+diesel_litre,litre,FILL,1,FILL,Fuels,FILL exact row label,Diesel (average biofuel blend)
+paper_primary_tonne,tonne,FILL,3,FILL,Material use,FILL exact row label,Paper and board primary material production

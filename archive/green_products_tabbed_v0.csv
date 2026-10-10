@@ -1,0 +1,5 @@
+ID	Product	Intended use	Indicative criteria (not a credit decision)	Sustainability metric
+GP01	EV Finance	Replace a petrol/diesel car with an EV	Owns a petrol/diesel car, or has regular fuel spend	kg CO₂e avoided/yr
+GP02	Green Home Loan	Insulation, glazing, heat pump, smart controls. Excludes solar	Home owner	kWh saved/yr, kg CO₂e/yr
+GP03	Solar Finance	Rooftop solar (± battery) only	Home owner, house (not flat), no existing solar	kWh generated/yr, kg CO₂e/yr
+GP04	Paperless Banking	Switch statements to digital	Receives paper statements	kg paper/yr, statements avoided

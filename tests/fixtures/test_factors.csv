@@ -1,0 +1,11 @@
+activity,unit,kg_co2e_per_unit,scope,factor_year,source_sheet,source_row_label,notes
+electricity_generation_kwh,kWh,0.20,2,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+electricity_td_kwh,kWh,0.02,3,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+natural_gas_gross_cv_kwh,kWh,0.18,1,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+petrol_car_avg_km,km,0.20,1,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+diesel_car_avg_km,km,0.16,1,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+bev_avg_km,km,0.045,2,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+bev_td_avg_km,km,0.005,3,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+petrol_litre,litre,2.0,1,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+diesel_litre,litre,2.4,1,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ
+paper_primary_tonne,tonne,900,3,TEST,TEST,TEST,SYNTHETIC TEST VALUE - NOT DESNZ

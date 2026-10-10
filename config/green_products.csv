@@ -1,0 +1,5 @@
+product_id,product,opportunity_key,category,intended_use,indicative_criteria,sustainability_metric,credit_product
+GP01,EV Finance,EV_FINANCE,Transport,Replace a petrol/diesel car with an EV,"Owns a petrol/diesel car, or has regular fuel spend",kg CO2e avoided/yr,true
+GP02,Green Home Loan,GREEN_HOME,Home energy efficiency,"Insulation, glazing, heat pump, smart controls. Excludes solar",Home owner,kWh saved/yr; kg CO2e avoided/yr,true
+GP03,Solar Finance,SOLAR_FINANCE,Home renewable generation,Rooftop solar (with or without battery) only,"Home owner, house (not flat), no existing solar",kWh generated/yr; kg CO2e avoided/yr,true
+GP04,Paperless Banking,PAPERLESS_BANKING,Digital banking,Switch statements to digital,Receives paper statements,kg paper avoided/yr; statements avoided/yr,false

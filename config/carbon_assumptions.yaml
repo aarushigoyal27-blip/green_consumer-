@@ -1,0 +1,77 @@
+# Every value here must have a source you can show a judge.
+# Items marked VERIFY are placeholders: replace value + source before submission.
+
+electricity_include_td:
+  label: Grid factor includes transmission & distribution losses
+  value: true
+  source: "Team decision: consumer-side view (generation + T&D), both from DESNZ"
+
+gp01_pump_price_petrol:
+  label: UK petrol pump price
+  value: 1.4593
+  unit: GBP/litre
+  source: "DESNZ Weekly road fuel prices (CSV 2018-2026, updated 6 Oct 2026), ULSP pump price, mean of 26 weekly values 05/01/2026-29/06/2026 = 145.93 p/litre; window matches contract feature_window 2026-01-01..2026-06-30. https://www.gov.uk/government/statistics/weekly-road-fuel-prices"
+
+gp01_pump_price_diesel:
+  label: UK diesel pump price
+  value: 1.6609
+  unit: GBP/litre
+  source: "DESNZ Weekly road fuel prices (CSV 2018-2026, updated 6 Oct 2026), ULSD pump price, mean of 26 weekly values 05/01/2026-29/06/2026 = 166.09 p/litre; window matches contract feature_window. https://www.gov.uk/government/statistics/weekly-road-fuel-prices"
+
+gp01_unknown_fuel_default:
+  label: Fuel type assumed when unknown or unmodelled (e.g. hybrid)
+  value: petrol
+  source: "Team decision: petrol is the most common UK car fuel; flagged as medium quality"
+
+gp03_system_kwp:
+  label: Assumed domestic PV system size
+  value: 4.0
+  unit: kWp
+  source: "Team assumption: typical UK domestic rooftop size (e.g. 10 x 400 W panels). Not verified against DESNZ solar deployment statistics, which the team could not access; stated as a limitation"
+
+gp03_yield_kwh_per_kwp:
+  label: Annual PV yield
+  value: 896
+  unit: kWh/kWp/yr
+  source: "MCS 012 Kk value 896 kWh/kWp for a London (Camden) domestic roof, from an MCS-method yield calculation in a Camden planning document (https://camdocs.camden.gov.uk/CMWebDrawer/Record/6388847/file/document). MCS Kk tables are derived from PVGIS. One location used for all customers: no regional adjustment"
+
+gp03_self_consumption_method:
+  label: How the share of PV generation used on site is determined
+  value: mcs_mgd003
+  source: "Team decision: MCS MGD 003 look-up tables (industry standard for UK domestic PV estimates) instead of one flat share"
+
+gp03_occupancy_archetype:
+  label: MCS MGD 003 occupancy archetype
+  value: In half the day
+  source: "MCS default archetype when occupancy is unknown (PS1 data has no occupancy pattern). MGD 003 look-up tables: https://mcscertified.com/?standard=look-up-tables-pv-self-consumption"
+
+gp03_mgd003_table:
+  label: MGD 003 PV-only self-consumption table (built by scripts/build_mgd003_table.py)
+  value: mcs_mgd003_pv_only.csv
+  source: "Extracted from config/raw/MGD003-LookupTables-FINAL.xlsx (MCS), 'PV Only' column, 540 rows"
+
+gp02_reduction_share_electricity:
+  label: Electricity reduction from Green Home retrofit package
+  value: 0.0
+  source: "DESNZ NEED Summary of analysis 2026 (config/raw/NEED-report-june-2026.pdf), ch.3: insulation and boiler measures are reported for gas savings only; no electricity saving evidence for fabric measures in gas-heated homes. Set to 0 (conservative). Limitation: understates savings for electrically heated homes (8% of English dwellings in 2023)"
+
+gp02_reduction_share_gas:
+  label: Gas reduction from Green Home retrofit package
+  value: 0.14
+  source: "DESNZ NEED Summary of analysis 2026 (published 11 Jun 2026), ch.3: median gas saving 14% for solid wall + loft insulation combination, measures installed 2023, England and Wales. Metered savings, so comfort-taking is already netted off. https://www.gov.uk/government/statistics/national-energy-efficiency-data-framework-need-report-summary-of-analysis-2026"
+
+gp04_pages_per_statement:
+  label: Pages per paper statement
+  value: 3
+  source: "Team assumption; stated as such"
+
+gp04_grams_per_page:
+  label: Mass of one A4 sheet at 80 gsm
+  value: 5.0
+  unit: g
+  source: "Arithmetic: 80 g/m2 x 0.0624 m2 (A4) = 4.99 g"
+
+gp04_report_paper_carbon:
+  label: Show paper-production carbon as a separate supplementary line
+  value: true
+  source: "Team decision"

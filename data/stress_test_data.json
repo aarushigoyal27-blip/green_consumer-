@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "description": "IMO CAR WASH #412 LEEDS",
+    "true_category": "Automotive",
+    "ambiguity_type": "car_wash_vs_fuel"
+  },
+  {
+    "id": 2,
+    "description": "WAVES HAND CAR WASH TESCO MANCHESTER",
+    "true_category": "Automotive",
+    "ambiguity_type": "car_wash_at_supermarket"
+  },
+  {
+    "id": 3,
+    "description": "SHELL CAR WASH & VALETING READING",
+    "true_category": "Automotive",
+    "ambiguity_type": "car_wash_at_petrol_station"
+  },
+  {
+    "id": 4,
+    "description": "BP FORECOURT AIR & CAR WASH OXFORD",
+    "true_category": "Automotive",
+    "ambiguity_type": "car_wash_at_petrol_station"
+  },
+  {
+    "id": 5,
+    "description": "AUTOGLASS WINDSCREEN REPAIR",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_servicing"
+  },
+  {
+    "id": 6,
+    "description": "HALFORDS AUTOCENTRE MOT & SERVICE",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_servicing"
+  },
+  {
+    "id": 7,
+    "description": "KWIK FIT TYRES & BRAKES BRISTOL",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_servicing"
+  },
+  {
+    "id": 8,
+    "description": "NATIONAL TYRES AUTOCARE COVENTRY",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_servicing"
+  },
+  {
+    "id": 9,
+    "description": "MR CLUTCH AUTOCENTRES TRANSMISSION",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_servicing"
+  },
+  {
+    "id": 10,
+    "description": "ATS EUROMASTER WHEEL ALIGNMENT",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_servicing"
+  },
+  {
+    "id": 11,
+    "description": "CAR PARTS 4 LESS ONLINE SPARES",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_parts"
+  },
+  {
+    "id": 12,
+    "description": "EURO CAR PARTS TRAFFORD BRANCH",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_parts"
+  },
+  {
+    "id": 13,
+    "description": "NCP CAR PARK BRISTOL CENTRAL",
+    "true_category": "Automotive",
+    "ambiguity_type": "parking_and_tolls"
+  },
+  {
+    "id": 14,
+    "description": "Q-PARK DEANSGATE MANCHESTER",
+    "true_category": "Automotive",
+    "ambiguity_type": "parking_and_tolls"
+  },
+  {
+    "id": 15,
+    "description": "RINGGO PARKING MOBILE APP LONDON",
+    "true_category": "Automotive",
+    "ambiguity_type": "parking_and_tolls"
+  },
+  {
+    "id": 16,
+    "description": "PAYBYPHONE PARKING NOTTINGHAM",
+    "true_category": "Automotive",
+    "ambiguity_type": "parking_and_tolls"
+  },
+  {
+    "id": 17,
+    "description": "DART CHARGE TOLL DARTFORD CROSSING",
+    "true_category": "Automotive",
+    "ambiguity_type": "parking_and_tolls"
+  },
+  {
+    "id": 18,
+    "description": "M6 TOLL ROAD BIRMINGHAM MIDLAND",
+    "true_category": "Automotive",
+    "ambiguity_type": "parking_and_tolls"
+  },
+  {
+    "id": 19,
+    "description": "DVLA VEHICLE TAX ROAD TAX RENEWAL",
+    "true_category": "Automotive",
+    "ambiguity_type": "vehicle_tax"
+  },
+  {
+    "id": 20,
+    "description": "THE AA BREAKDOWN ASSISTANCE DD",
+    "true_category": "Automotive",
+    "ambiguity_type": "breakdown_cover"
+  },
+  {
+    "id": 21,
+    "description": "RAC MEMBERSHIP AUTOMOTIVE SERVICE",
+    "true_category": "Automotive",
+    "ambiguity_type": "breakdown_cover"
+  },
+  {
+    "id": 22,
+    "description": "GREEN FLAG CAR RECOVERY LEEDS",
+    "true_category": "Automotive",
+    "ambiguity_type": "breakdown_cover"
+  },
+  {
+    "id": 23,
+    "description": "SHELL PETROL STN 1084 LONDON",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 24,
+    "description": "BP PETROLEUM CONNECT FOREST HILL",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 25,
+    "description": "ESSO EXPRESS FORECOURT FUEL BATH",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 26,
+    "description": "TESCO PFS 3124 FUEL STN SLOUGH",
+    "true_category": "Fuel",
+    "ambiguity_type": "supermarket_pfs"
+  },
+  {
+    "id": 27,
+    "description": "TESCO PETROL STN KINGS CROSS",
+    "true_category": "Fuel",
+    "ambiguity_type": "supermarket_pfs"
+  },
+  {
+    "id": 28,
+    "description": "SAINSBURYS PFS 0488 FUEL DERBY",
+    "true_category": "Fuel",
+    "ambiguity_type": "supermarket_pfs"
+  },
+  {
+    "id": 29,
+    "description": "SAINSBURYS PETROL DEPT 34 BRIGHTON",
+    "true_category": "Fuel",
+    "ambiguity_type": "supermarket_pfs"
+  },
+  {
+    "id": 30,
+    "description": "ASDA PETROL FILLING STN LEEDS",
+    "true_category": "Fuel",
+    "ambiguity_type": "supermarket_pfs"
+  },
+  {
+    "id": 31,
+    "description": "MORRISONS PFS FUEL BRADFORD",
+    "true_category": "Fuel",
+    "ambiguity_type": "supermarket_pfs"
+  },
+  {
+    "id": 32,
+    "description": "APPLEGREEN PETROL STN DERBY",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 33,
+    "description": "TEXACO STAR SERVICE FUEL CARDIFF",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 34,
+    "description": "JET SERVICE STN PETROL SHEFFIELD",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 35,
+    "description": "MOTO MOTORWAY SVCS FUEL M4 READING",
+    "true_category": "Fuel",
+    "ambiguity_type": "motorway_service_fuel"
+  },
+  {
+    "id": 36,
+    "description": "WELCOME BREAK FUEL FORECOURT M1",
+    "true_category": "Fuel",
+    "ambiguity_type": "motorway_service_fuel"
+  },
+  {
+    "id": 37,
+    "description": "ALLSTAR FUEL CARD PAYMENT",
+    "true_category": "Fuel",
+    "ambiguity_type": "fuel_card"
+  },
+  {
+    "id": 38,
+    "description": "MURCO PETROLEUM SWANSEA PUMP",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 39,
+    "description": "GULF PETROL PUMP CARD CHESTER",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 40,
+    "description": "HARVEST ENERGY FUEL PUMP ESSEX",
+    "true_category": "Fuel",
+    "ambiguity_type": "petrol_station"
+  },
+  {
+    "id": 41,
+    "description": "TOTAL ENERGIES FUEL DEPOT HULL",
+    "true_category": "Fuel",
+    "ambiguity_type": "fuel_depot_vs_utilities"
+  },
+  {
+    "id": 42,
+    "description": "BRITISH GAS DUAL FUEL DD",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 43,
+    "description": "BRITISH GAS ENERGY DIRECT DEBIT",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 44,
+    "description": "OCTOPUS ENERGY DIRECT DEBIT",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 45,
+    "description": "OCTOPUS ENERGY DUAL FUEL ACCT",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 46,
+    "description": "E.ON NEXT MONTHLY ENERGY BILL",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 47,
+    "description": "EDF ENERGY DUAL FUEL DD",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 48,
+    "description": "SCOTTISH POWER ENERGY DD",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 49,
+    "description": "OVO ENERGY DUAL FUEL DIRECT DEBIT",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 50,
+    "description": "SHELL ENERGY DUAL FUEL TARIFF",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_vs_fuel"
+  },
+  {
+    "id": 51,
+    "description": "SO ENERGY DIRECT DEBIT LONDON",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 52,
+    "description": "OUTFOX THE MARKET ENERGY DD",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 53,
+    "description": "UTILITA ENERGY TOP UP CARD",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 54,
+    "description": "CO-OP ENERGY DUAL FUEL DIRECT",
+    "true_category": "Utilities",
+    "ambiguity_type": "dual_fuel_supplier"
+  },
+  {
+    "id": 55,
+    "description": "THAMES WATER UTILITIES DIRECT DEBIT",
+    "true_category": "Utilities",
+    "ambiguity_type": "water_utility"
+  },
+  {
+    "id": 56,
+    "description": "SEVERN TRENT WATER BILL",
+    "true_category": "Utilities",
+    "ambiguity_type": "water_utility"
+  },
+  {
+    "id": 57,
+    "description": "ANGLIAN WATER MONTHLY DD",
+    "true_category": "Utilities",
+    "ambiguity_type": "water_utility"
+  },
+  {
+    "id": 58,
+    "description": "BRITISH GAS ELECTRICITY ONLY DD",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 59,
+    "description": "BRITISH GAS ELEC BILL LONDON",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 60,
+    "description": "OCTOPUS ENERGY ELEC ONLY TARIFF",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 61,
+    "description": "EDF ENERGY ELECTRICITY SUPPLY",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 62,
+    "description": "E.ON NEXT ELECTRICITY BILL DD",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 63,
+    "description": "SCOTTISH POWER ELEC PAYMENT",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 64,
+    "description": "OVO ENERGY ELECTRICITY ACCT",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 65,
+    "description": "BULB ELECTRICITY CHARGE DD",
+    "true_category": "Electricity",
+    "ambiguity_type": "single_fuel_electricity"
+  },
+  {
+    "id": 66,
+    "description": "BRITISH GAS RESIDENTIAL GAS DD",
+    "true_category": "Gas",
+    "ambiguity_type": "single_fuel_gas"
+  },
+  {
+    "id": 67,
+    "description": "BRITISH GAS GAS BILL PAYMENT",
+    "true_category": "Gas",
+    "ambiguity_type": "single_fuel_gas"
+  },
+  {
+    "id": 68,
+    "description": "OCTOPUS ENERGY GAS ONLY SUPPLY",
+    "true_category": "Gas",
+    "ambiguity_type": "single_fuel_gas"
+  },
+  {
+    "id": 69,
+    "description": "EDF ENERGY GAS CHARGES DD",
+    "true_category": "Gas",
+    "ambiguity_type": "single_fuel_gas"
+  },
+  {
+    "id": 70,
+    "description": "SCOTTISH POWER GAS ACCOUNT",
+    "true_category": "Gas",
+    "ambiguity_type": "single_fuel_gas"
+  },
+  {
+    "id": 71,
+    "description": "E.ON NEXT GAS BILL DIRECT DEBIT",
+    "true_category": "Gas",
+    "ambiguity_type": "single_fuel_gas"
+  },
+  {
+    "id": 72,
+    "description": "CALOR GAS CYLINDER REFILL",
+    "true_category": "Gas",
+    "ambiguity_type": "bottled_gas_supplier"
+  },
+  {
+    "id": 73,
+    "description": "FLOGAS BOTTLED GAS DELIVERY",
+    "true_category": "Gas",
+    "ambiguity_type": "bottled_gas_supplier"
+  },
+  {
+    "id": 74,
+    "description": "AVANTI GAS PROPANE TANK SUPPLY",
+    "true_category": "Gas",
+    "ambiguity_type": "bottled_gas_supplier"
+  },
+  {
+    "id": 75,
+    "description": "TFL TRAVEL CHARGE LONDON UNDERGROUND",
+    "true_category": "Public Transport",
+    "ambiguity_type": "tfl_contactless_charge"
+  },
+  {
+    "id": 76,
+    "description": "TRANSPORT FOR LONDON OYSTER AUTO",
+    "true_category": "Public Transport",
+    "ambiguity_type": "tfl_contactless_charge"
+  },
+  {
+    "id": 77,
+    "description": "NATIONAL RAIL ENQUIRIES TICKETS",
+    "true_category": "Public Transport",
+    "ambiguity_type": "rail_ticketing"
+  },
+  {
+    "id": 78,
+    "description": "THE TRAINLINE.COM TICKETING APP",
+    "true_category": "Public Transport",
+    "ambiguity_type": "rail_ticketing"
+  },
+  {
+    "id": 79,
+    "description": "LNER TRAIN TICKETS EDINBURGH",
+    "true_category": "Public Transport",
+    "ambiguity_type": "rail_ticketing"
+  },
+  {
+    "id": 80,
+    "description": "AVANTI WEST COAST BIRMINGHAM RAIL",
+    "true_category": "Public Transport",
+    "ambiguity_type": "rail_ticketing"
+  },
+  {
+    "id": 81,
+    "description": "GWR GREAT WESTERN RAILWAY TKT",
+    "true_category": "Public Transport",
+    "ambiguity_type": "rail_ticketing"
+  },
+  {
+    "id": 82,
+    "description": "STAGECOACH BUS MOB TICKETS OXFORD",
+    "true_category": "Public Transport",
+    "ambiguity_type": "bus_transport"
+  },
+  {
+    "id": 83,
+    "description": "FIRST BUS M-TICKET APP LEEDS",
+    "true_category": "Public Transport",
+    "ambiguity_type": "bus_transport"
+  },
+  {
+    "id": 84,
+    "description": "NATIONAL EXPRESS COACH TICKETS",
+    "true_category": "Public Transport",
+    "ambiguity_type": "coach_transport"
+  },
+  {
+    "id": 85,
+    "description": "CALEDONIAN MACBRAYNE FERRIES OBAN",
+    "true_category": "Public Transport",
+    "ambiguity_type": "ferry_transport"
+  },
+  {
+    "id": 86,
+    "description": "MANCHESTER METROLINK TRAM FARE",
+    "true_category": "Public Transport",
+    "ambiguity_type": "tram_transport"
+  },
+  {
+    "id": 87,
+    "description": "B&Q SUPERCENTRE DIY TOOLS FARNBOROUGH",
+    "true_category": "Home Improvement",
+    "ambiguity_type": "diy_retailer"
+  },
+  {
+    "id": 88,
+    "description": "SCREWFIX TRADE COUNTER 451 CRAWLEY",
+    "true_category": "Home Improvement",
+    "ambiguity_type": "trade_merchant"
+  },
+  {
+    "id": 89,
+    "description": "WICKES BUILDING SUPPLIES LTD",
+    "true_category": "Home Improvement",
+    "ambiguity_type": "building_merchant"
+  },
+  {
+    "id": 90,
+    "description": "TOOLSTATION PLUMBING & ELECTRICAL",
+    "true_category": "Home Improvement",
+    "ambiguity_type": "trade_merchant"
+  },
+  {
+    "id": 91,
+    "description": "TRAVIS PERKINS TIMBER & BUILD LEEDS",
+    "true_category": "Home Improvement",
+    "ambiguity_type": "building_merchant"
+  },
+  {
+    "id": 92,
+    "description": "JEWSON TIMBER MERCHANTS YORK",
+    "true_category": "Home Improvement",
+    "ambiguity_type": "building_merchant"
+  },
+  {
+    "id": 93,
+    "description": "HOMEBASE GARDEN & HARDWARE EPSOM",
+    "true_category": "Home Improvement",
+    "ambiguity_type": "diy_retailer"
+  },
+  {
+    "id": 94,
+    "description": "TESCO EXTRA SUPERSTORE GROCERY",
+    "true_category": "Other",
+    "ambiguity_type": "supermarket_grocery_vs_pfs"
+  },
+  {
+    "id": 95,
+    "description": "SAINSBURYS SUPERMARKETS FOOD LONDON",
+    "true_category": "Other",
+    "ambiguity_type": "supermarket_grocery_vs_pfs"
+  },
+  {
+    "id": 96,
+    "description": "ASDA SUPERSTORE GROCERY CHECKOUT",
+    "true_category": "Other",
+    "ambiguity_type": "supermarket_grocery_vs_pfs"
+  },
+  {
+    "id": 97,
+    "description": "MARKS & SPENCER SIMPLY FOOD KINGS X",
+    "true_category": "Other",
+    "ambiguity_type": "retail_food"
+  },
+  {
+    "id": 98,
+    "description": "AMAZON UK MARKETPLACE RETAIL",
+    "true_category": "Other",
+    "ambiguity_type": "online_retail"
+  },
+  {
+    "id": 99,
+    "description": "COSTA COFFEE DRIVE THRU READING",
+    "true_category": "Other",
+    "ambiguity_type": "dining_and_coffee"
+  },
+  {
+    "id": 100,
+    "description": "NETFLIX ENTERTAINMENT MONTHLY SUB",
+    "true_category": "Other",
+    "ambiguity_type": "digital_subscription"
+  }
+]

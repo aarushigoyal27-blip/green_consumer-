@@ -1,0 +1,989 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "megathon-product-eligibility",
+  "contract_name": "Megathon PS1 Product Targeting and Exclusion Contract",
+  "version": "2.1.0",
+  "status": "FROZEN",
+  "changelog": [
+    "2.1.0: account_status gains FROZEN (inactive -> EXC_INACTIVE_ACCOUNT); data used FROZEN but the engine and contract did not list it",
+    "2.1.0: delinquency 30_DAYS/60_DAYS/90_DAYS now trigger EXC_ARREARS_OR_DEFAULT (previously only ARREARS/DEFAULT)",
+    "2.1.0: vehicle_fuel_type input accepts any case plus aliases ELECTRIC/BEV -> ev; output stays lowercase petrol/diesel/hybrid/ev",
+    "2.1.0: unknown categorical values now raise UnknownVocabularyError instead of passing silently; vulnerability read from vulnerability_flag only",
+    "2.0.0: product numbering aligned to PS1 spec Section 2 (GP01 EV, GP02 Green Home, GP03 Solar, GP04 Paperless)",
+    "2.0.0: INSUFFICIENT_DATA status + missing_fields; EXC_MISSING_DATA removed (missing data is not an exclusion)",
+    "2.0.0: added EXC_PROPERTY_MAX_EFFICIENCY, EXC_PROPERTY_TYPE_INELIGIBLE, EXC_ALREADY_SOLAR_INSTALLED, EXC_NO_VEHICLE, EXC_NO_DIGITAL_CHANNEL",
+    "2.0.0: EXC_LOW_CREDIT_SCORE -> EXC_ARREARS_OR_DEFAULT (no numeric credit score); EXC_OUTSIDE_FEATURE_WINDOW removed (data-pipeline filter)",
+    "2.0.0: is_eligible -> targetable (targeting is not financial eligibility); requires_human_review for vulnerability",
+    "2.0.0: emission factors removed (single source: config/emission_factors.csv); PS2 fields property_value/indicative_uplift removed",
+    "2.0.0: inputs added: has_ice_vehicle, vehicle_fuel_type, annual_mileage_km (km), paper_statements_per_year, vulnerability_flag; credit_score removed"
+  ],
+  "metadata": {
+    "platform": "Green Customer Insights Platform",
+    "hackathon": "Megathon X: Singularity",
+    "problem_statement": "PS1: Green Customer Insights Platform",
+    "institution": "Lloyds Banking Group",
+    "cutoff_date": "2026-06-30",
+    "feature_window": {
+      "start": "2026-01-01",
+      "end": "2026-06-30"
+    },
+    "outcome_window": {
+      "start": "2026-07-01",
+      "end": "2026-12-31"
+    },
+    "generated_by": "scripts/build_contract.py"
+  },
+  "product_catalogue": {
+    "GP01": {
+      "product_code": "GP01",
+      "opportunity_key": "EV_FINANCE",
+      "product_name": "EV Finance",
+      "intended_use": "Replace a petrol/diesel car with an EV",
+      "indicative_criteria": "Owns a petrol/diesel car, or has regular fuel spend (not a credit decision)",
+      "sustainability_metric": "kg CO2e avoided/yr",
+      "credit_product": true,
+      "applicable_exclusions": [
+        "EXC_AGE_RESTRICTION",
+        "EXC_ALREADY_EV_OWNER",
+        "EXC_ARREARS_OR_DEFAULT",
+        "EXC_COMPLIANCE_HOLD",
+        "EXC_DUPLICATE_OFFER",
+        "EXC_INACTIVE_ACCOUNT",
+        "EXC_NO_VEHICLE",
+        "EXC_OPT_OUT",
+        "EXC_REGIONAL_RESTRICTION"
+      ],
+      "carbon_method": "docs/carbon_methodology.md (factors: config/emission_factors.csv)"
+    },
+    "GP02": {
+      "product_code": "GP02",
+      "opportunity_key": "GREEN_HOME",
+      "product_name": "Green Home Loan",
+      "intended_use": "Insulation, glazing, heat pump, smart controls. Excludes solar",
+      "indicative_criteria": "Home owner (not a credit decision)",
+      "sustainability_metric": "kWh saved/yr, kg CO2e/yr",
+      "credit_product": true,
+      "applicable_exclusions": [
+        "EXC_AGE_RESTRICTION",
+        "EXC_ARREARS_OR_DEFAULT",
+        "EXC_COMPLIANCE_HOLD",
+        "EXC_DUPLICATE_OFFER",
+        "EXC_INACTIVE_ACCOUNT",
+        "EXC_NOT_HOMEOWNER",
+        "EXC_OPT_OUT",
+        "EXC_PROPERTY_MAX_EFFICIENCY",
+        "EXC_REGIONAL_RESTRICTION"
+      ],
+      "carbon_method": "docs/carbon_methodology.md (factors: config/emission_factors.csv)"
+    },
+    "GP03": {
+      "product_code": "GP03",
+      "opportunity_key": "SOLAR_FINANCE",
+      "product_name": "Solar Finance",
+      "intended_use": "Rooftop solar (with or without battery) only",
+      "indicative_criteria": "Home owner, house (not flat), no existing solar (not a credit decision)",
+      "sustainability_metric": "kWh generated/yr, kg CO2e/yr",
+      "credit_product": true,
+      "applicable_exclusions": [
+        "EXC_AGE_RESTRICTION",
+        "EXC_ALREADY_SOLAR_INSTALLED",
+        "EXC_ARREARS_OR_DEFAULT",
+        "EXC_COMPLIANCE_HOLD",
+        "EXC_DUPLICATE_OFFER",
+        "EXC_INACTIVE_ACCOUNT",
+        "EXC_NOT_HOMEOWNER",
+        "EXC_OPT_OUT",
+        "EXC_PROPERTY_TYPE_INELIGIBLE",
+        "EXC_REGIONAL_RESTRICTION"
+      ],
+      "carbon_method": "docs/carbon_methodology.md (factors: config/emission_factors.csv)"
+    },
+    "GP04": {
+      "product_code": "GP04",
+      "opportunity_key": "PAPERLESS_BANKING",
+      "product_name": "Paperless Banking",
+      "intended_use": "Switch statements to digital",
+      "indicative_criteria": "Receives paper statements (not a credit decision)",
+      "sustainability_metric": "kg paper/yr, statements avoided",
+      "credit_product": false,
+      "applicable_exclusions": [
+        "EXC_AGE_RESTRICTION",
+        "EXC_ALREADY_PAPERLESS",
+        "EXC_COMPLIANCE_HOLD",
+        "EXC_DUPLICATE_OFFER",
+        "EXC_INACTIVE_ACCOUNT",
+        "EXC_NO_DIGITAL_CHANNEL",
+        "EXC_OPT_OUT",
+        "EXC_REGIONAL_RESTRICTION"
+      ],
+      "carbon_method": "docs/carbon_methodology.md (factors: config/emission_factors.csv)"
+    }
+  },
+  "exclusion_reason_codes": {
+    "EXC_OPT_OUT": {
+      "code": "EXC_OPT_OUT",
+      "title": "Customer opted out of marketing",
+      "rule": "marketing_consent is False (UK GDPR Art. 21 / PECR). Missing consent -> INSUFFICIENT_DATA, never assumed",
+      "category": "REGULATORY",
+      "products": [
+        "GP01",
+        "GP02",
+        "GP03",
+        "GP04"
+      ]
+    },
+    "EXC_COMPLIANCE_HOLD": {
+      "code": "EXC_COMPLIANCE_HOLD",
+      "title": "Compliance hold",
+      "rule": "compliance_status in HOLD, INVESTIGATION, SANCTION",
+      "category": "FINANCIAL_CRIME",
+      "products": [
+        "GP01",
+        "GP02",
+        "GP03",
+        "GP04"
+      ]
+    },
+    "EXC_REGIONAL_RESTRICTION": {
+      "code": "EXC_REGIONAL_RESTRICTION",
+      "title": "Outside the UK",
+      "rule": "uk_resident is False, or country_code present and not GB/UK",
+      "category": "JURISDICTION",
+      "products": [
+        "GP01",
+        "GP02",
+        "GP03",
+        "GP04"
+      ]
+    },
+    "EXC_AGE_RESTRICTION": {
+      "code": "EXC_AGE_RESTRICTION",
+      "title": "Under 18",
+      "rule": "age < 18. No upper age limit",
+      "category": "LEGAL",
+      "products": [
+        "GP01",
+        "GP02",
+        "GP03",
+        "GP04"
+      ]
+    },
+    "EXC_INACTIVE_ACCOUNT": {
+      "code": "EXC_INACTIVE_ACCOUNT",
+      "title": "Account inactive",
+      "rule": "account_status in DORMANT, CLOSED, BLOCKED, FROZEN, or transaction_count_6m == 0",
+      "category": "ACCOUNT_STATUS",
+      "products": [
+        "GP01",
+        "GP02",
+        "GP03",
+        "GP04"
+      ]
+    },
+    "EXC_DUPLICATE_OFFER": {
+      "code": "EXC_DUPLICATE_OFFER",
+      "title": "Recently declined this offer",
+      "rule": "days_since_last_offer_decline < 90 (0 = declined today)",
+      "category": "CAMPAIGN_GOVERNANCE",
+      "products": [
+        "GP01",
+        "GP02",
+        "GP03",
+        "GP04"
+      ]
+    },
+    "EXC_ARREARS_OR_DEFAULT": {
+      "code": "EXC_ARREARS_OR_DEFAULT",
+      "title": "In arrears or default",
+      "rule": "is_in_arrears is True or delinquency_status in 30_DAYS, 60_DAYS, 90_DAYS, ARREARS, DEFAULT. Credit products only. Vulnerability is NOT an exclusion (vulnerability_flag sets requires_human_review)",
+      "category": "FINANCIAL_DIFFICULTY",
+      "products": [
+        "GP01",
+        "GP02",
+        "GP03"
+      ]
+    },
+    "EXC_NOT_HOMEOWNER": {
+      "code": "EXC_NOT_HOMEOWNER",
+      "title": "Not a homeowner",
+      "rule": "homeowner_status in TENANT, LODGER, COUNCIL_TENANT. Missing or UNKNOWN -> INSUFFICIENT_DATA",
+      "category": "PROPERTY_TENURE",
+      "products": [
+        "GP02",
+        "GP03"
+      ]
+    },
+    "EXC_ALREADY_EV_OWNER": {
+      "code": "EXC_ALREADY_EV_OWNER",
+      "title": "Only vehicle is already an EV",
+      "rule": "is_ev_owner is True and has_ice_vehicle is False (FR7: no replacement use case)",
+      "category": "ASSET_OWNERSHIP",
+      "products": [
+        "GP01"
+      ]
+    },
+    "EXC_NO_VEHICLE": {
+      "code": "EXC_NO_VEHICLE",
+      "title": "No vehicle",
+      "rule": "has_vehicle is False and no fuel spend or mileage",
+      "category": "ASSET_OWNERSHIP",
+      "products": [
+        "GP01"
+      ]
+    },
+    "EXC_PROPERTY_MAX_EFFICIENCY": {
+      "code": "EXC_PROPERTY_MAX_EFFICIENCY",
+      "title": "Home already highly efficient",
+      "rule": "property_epc_rating in A, B",
+      "category": "PROPERTY",
+      "products": [
+        "GP02"
+      ]
+    },
+    "EXC_PROPERTY_TYPE_INELIGIBLE": {
+      "code": "EXC_PROPERTY_TYPE_INELIGIBLE",
+      "title": "No private roof",
+      "rule": "property_type in FLAT, APARTMENT, MAISONETTE_SHARED, COMMUNAL",
+      "category": "PROPERTY",
+      "products": [
+        "GP03"
+      ]
+    },
+    "EXC_ALREADY_SOLAR_INSTALLED": {
+      "code": "EXC_ALREADY_SOLAR_INSTALLED",
+      "title": "Solar already installed",
+      "rule": "has_solar is True",
+      "category": "ASSET_OWNERSHIP",
+      "products": [
+        "GP03"
+      ]
+    },
+    "EXC_ALREADY_PAPERLESS": {
+      "code": "EXC_ALREADY_PAPERLESS",
+      "title": "Already paperless",
+      "rule": "is_paperless is True",
+      "category": "CHANNEL_STATUS",
+      "products": [
+        "GP04"
+      ]
+    },
+    "EXC_NO_DIGITAL_CHANNEL": {
+      "code": "EXC_NO_DIGITAL_CHANNEL",
+      "title": "No digital banking",
+      "rule": "has_digital_banking is False or digital_logins_90d == 0",
+      "category": "CHANNEL_STATUS",
+      "products": [
+        "GP04"
+      ]
+    }
+  },
+  "schemas": {
+    "customer_profile_input": {
+      "title": "CustomerProfileInput",
+      "type": "object",
+      "required": [
+        "customer_id",
+        "data_cutoff_date"
+      ],
+      "description": "All other fields are nullable. Null means unknown and yields INSUFFICIENT_DATA where a rule needs it; never 0 or False by default. Categorical values outside the listed enums are rejected (UnknownVocabularyError), never silently passed.",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "pattern": "^C[0-9]{4,}$"
+        },
+        "data_cutoff_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "homeowner_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "OWNER",
+            "OWNER_OCCUPIER",
+            "MORTGAGED",
+            "TENANT",
+            "LODGER",
+            "COUNCIL_TENANT",
+            "UNKNOWN",
+            null
+          ]
+        },
+        "is_ev_owner": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "has_ice_vehicle": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Owns at least one petrol/diesel vehicle (FR7 replacement use case)"
+        },
+        "has_vehicle": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "vehicle_fuel_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "petrol",
+            "diesel",
+            "hybrid",
+            "ev",
+            "PETROL",
+            "DIESEL",
+            "HYBRID",
+            "EV",
+            "ELECTRIC",
+            "BEV",
+            null
+          ],
+          "description": "Case-insensitive on input; aliases ELECTRIC and BEV map to ev. Output is always lowercase. Not used by any rule."
+        },
+        "annual_mileage_km": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "Kilometres per year (NOT miles)"
+        },
+        "annual_fuel_spend": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "GBP per year, annualised from observation window"
+        },
+        "baseline_electricity_kwh": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "kWh per year, annualised from available months"
+        },
+        "baseline_gas_kwh": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "kWh per year (gross CV), annualised from available months"
+        },
+        "paper_statements_per_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "is_paperless": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "has_digital_banking": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "digital_logins_90d": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "has_solar": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "property_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "DETACHED",
+            "SEMI_DETACHED",
+            "TERRACED",
+            "BUNGALOW",
+            "FLAT",
+            "APARTMENT",
+            "MAISONETTE_SHARED",
+            "COMMUNAL",
+            null
+          ]
+        },
+        "property_epc_rating": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            null
+          ]
+        },
+        "is_in_arrears": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "delinquency_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "CURRENT",
+            "30_DAYS",
+            "60_DAYS",
+            "90_DAYS",
+            "ARREARS",
+            "DEFAULT",
+            null
+          ]
+        },
+        "vulnerability_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Routes to human review; never an exclusion"
+        },
+        "age": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 120
+        },
+        "marketing_consent": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "account_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "ACTIVE",
+            "DORMANT",
+            "CLOSED",
+            "BLOCKED",
+            "FROZEN",
+            null
+          ]
+        },
+        "transaction_count_6m": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "uk_resident": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "country_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "compliance_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "CLEAR",
+            "HOLD",
+            "INVESTIGATION",
+            "SANCTION",
+            null
+          ]
+        },
+        "days_since_last_offer_decline": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "single_product_decision_output": {
+      "title": "SingleProductDecisionOutput",
+      "type": "object",
+      "required": [
+        "customer_id",
+        "product_code",
+        "opportunity",
+        "product_name",
+        "cutoff_date",
+        "targetable",
+        "targeting_status",
+        "exclusion_reason_codes",
+        "missing_fields",
+        "requires_human_review",
+        "propensity",
+        "confidence",
+        "reason_codes",
+        "impact",
+        "grounded_attributes"
+      ],
+      "properties": {
+        "customer_id": {
+          "type": "string"
+        },
+        "product_code": {
+          "type": "string",
+          "enum": [
+            "GP01",
+            "GP02",
+            "GP03",
+            "GP04"
+          ]
+        },
+        "opportunity": {
+          "type": "string",
+          "enum": [
+            "EV_FINANCE",
+            "GREEN_HOME",
+            "SOLAR_FINANCE",
+            "PAPERLESS_BANKING"
+          ]
+        },
+        "product_name": {
+          "type": "string"
+        },
+        "cutoff_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "targetable": {
+          "type": "boolean",
+          "description": "May be marketed to. NOT financial eligibility, which is decided by the institution's authorised processes"
+        },
+        "targeting_status": {
+          "type": "string",
+          "enum": [
+            "QUALIFIED",
+            "EXCLUDED",
+            "INSUFFICIENT_DATA"
+          ]
+        },
+        "exclusion_reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "EXC_OPT_OUT",
+              "EXC_COMPLIANCE_HOLD",
+              "EXC_REGIONAL_RESTRICTION",
+              "EXC_AGE_RESTRICTION",
+              "EXC_INACTIVE_ACCOUNT",
+              "EXC_DUPLICATE_OFFER",
+              "EXC_ARREARS_OR_DEFAULT",
+              "EXC_NOT_HOMEOWNER",
+              "EXC_ALREADY_EV_OWNER",
+              "EXC_NO_VEHICLE",
+              "EXC_PROPERTY_MAX_EFFICIENCY",
+              "EXC_PROPERTY_TYPE_INELIGIBLE",
+              "EXC_ALREADY_SOLAR_INSTALLED",
+              "EXC_ALREADY_PAPERLESS",
+              "EXC_NO_DIGITAL_CHANNEL"
+            ]
+          }
+        },
+        "missing_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Fields a rule needed but were missing; drives INSUFFICIENT_DATA"
+        },
+        "requires_human_review": {
+          "type": "boolean"
+        },
+        "propensity": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "From the ML model; null in exclusion-engine output"
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "impact": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Carbon engine ImpactResult (see docs/carbon_methodology.md); null in exclusion-engine output"
+        },
+        "grounded_attributes": {
+          "type": "object",
+          "required": [
+            "data_cutoff_date"
+          ],
+          "description": "Observed inputs only. No modelled numbers (carbon comes from the carbon engine via impact)",
+          "properties": {
+            "data_cutoff_date": {
+              "type": "string"
+            },
+            "annual_fuel_spend": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "description": "GBP per year, annualised from observation window"
+            },
+            "annual_mileage_km": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "description": "Kilometres per year (NOT miles)"
+            },
+            "baseline_electricity_kwh": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "description": "kWh per year, annualised from available months"
+            },
+            "baseline_gas_kwh": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "description": "kWh per year (gross CV), annualised from available months"
+            },
+            "paper_statements_per_year": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "property_epc_rating": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                null
+              ]
+            },
+            "property_type": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "DETACHED",
+                "SEMI_DETACHED",
+                "TERRACED",
+                "BUNGALOW",
+                "FLAT",
+                "APARTMENT",
+                "MAISONETTE_SHARED",
+                "COMMUNAL",
+                null
+              ]
+            },
+            "vehicle_fuel_type": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "petrol",
+                "diesel",
+                "hybrid",
+                "ev",
+                null
+              ],
+              "description": "Primary vehicle; carbon engine input"
+            }
+          }
+        }
+      }
+    },
+    "customer_multi_product_response": {
+      "title": "CustomerMultiProductResponse",
+      "type": "object",
+      "required": [
+        "customer_id",
+        "cutoff_date",
+        "products"
+      ],
+      "properties": {
+        "customer_id": {
+          "type": "string"
+        },
+        "cutoff_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "products": {
+          "type": "object",
+          "required": [
+            "GP01",
+            "GP02",
+            "GP03",
+            "GP04"
+          ],
+          "properties": {
+            "GP01": {
+              "$ref": "#/schemas/single_product_decision_output"
+            },
+            "GP02": {
+              "$ref": "#/schemas/single_product_decision_output"
+            },
+            "GP03": {
+              "$ref": "#/schemas/single_product_decision_output"
+            },
+            "GP04": {
+              "$ref": "#/schemas/single_product_decision_output"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_payloads": {
+    "sample_input_qualified_customer": {
+      "customer_id": "C10001",
+      "data_cutoff_date": "2026-06-30",
+      "homeowner_status": "OWNER",
+      "is_ev_owner": false,
+      "has_ice_vehicle": true,
+      "has_vehicle": true,
+      "vehicle_fuel_type": "petrol",
+      "annual_mileage_km": 12000.0,
+      "annual_fuel_spend": 1650.0,
+      "baseline_electricity_kwh": 4800.0,
+      "baseline_gas_kwh": 12000.0,
+      "paper_statements_per_year": 12,
+      "is_paperless": false,
+      "has_digital_banking": true,
+      "digital_logins_90d": 18,
+      "has_solar": false,
+      "property_type": "SEMI_DETACHED",
+      "property_epc_rating": "E",
+      "is_in_arrears": false,
+      "delinquency_status": "CURRENT",
+      "vulnerability_flag": false,
+      "age": 42,
+      "marketing_consent": true,
+      "account_status": "ACTIVE",
+      "transaction_count_6m": 240,
+      "uk_resident": true,
+      "country_code": "GB",
+      "compliance_status": "CLEAR",
+      "days_since_last_offer_decline": null
+    },
+    "sample_output_qualified_ev": {
+      "customer_id": "C10001",
+      "product_code": "GP01",
+      "opportunity": "EV_FINANCE",
+      "product_name": "EV Finance",
+      "cutoff_date": "2026-06-30",
+      "targetable": true,
+      "targeting_status": "QUALIFIED",
+      "exclusion_reason_codes": [],
+      "missing_fields": [],
+      "requires_human_review": false,
+      "propensity": null,
+      "confidence": null,
+      "reason_codes": [],
+      "impact": null,
+      "grounded_attributes": {
+        "data_cutoff_date": "2026-06-30",
+        "annual_fuel_spend": 1650.0,
+        "annual_mileage_km": 12000.0,
+        "baseline_electricity_kwh": 4800.0,
+        "baseline_gas_kwh": 12000.0,
+        "paper_statements_per_year": 12,
+        "property_epc_rating": "E",
+        "property_type": "SEMI_DETACHED",
+        "vehicle_fuel_type": "petrol"
+      }
+    },
+    "sample_output_excluded_ev_only_owner": {
+      "customer_id": "C10088",
+      "product_code": "GP01",
+      "opportunity": "EV_FINANCE",
+      "product_name": "EV Finance",
+      "cutoff_date": "2026-06-30",
+      "targetable": false,
+      "targeting_status": "EXCLUDED",
+      "exclusion_reason_codes": [
+        "EXC_ALREADY_EV_OWNER"
+      ],
+      "missing_fields": [],
+      "requires_human_review": false,
+      "propensity": null,
+      "confidence": null,
+      "reason_codes": [],
+      "impact": null,
+      "grounded_attributes": {
+        "data_cutoff_date": "2026-06-30",
+        "annual_fuel_spend": 1650.0,
+        "annual_mileage_km": 12000.0,
+        "baseline_electricity_kwh": 4800.0,
+        "baseline_gas_kwh": 12000.0,
+        "paper_statements_per_year": 12,
+        "property_epc_rating": "E",
+        "property_type": "SEMI_DETACHED",
+        "vehicle_fuel_type": "ev"
+      }
+    },
+    "sample_output_excluded_solar_tenant": {
+      "customer_id": "C10042",
+      "product_code": "GP03",
+      "opportunity": "SOLAR_FINANCE",
+      "product_name": "Solar Finance",
+      "cutoff_date": "2026-06-30",
+      "targetable": false,
+      "targeting_status": "EXCLUDED",
+      "exclusion_reason_codes": [
+        "EXC_NOT_HOMEOWNER"
+      ],
+      "missing_fields": [],
+      "requires_human_review": false,
+      "propensity": null,
+      "confidence": null,
+      "reason_codes": [],
+      "impact": null,
+      "grounded_attributes": {
+        "data_cutoff_date": "2026-06-30",
+        "annual_fuel_spend": 1650.0,
+        "annual_mileage_km": 12000.0,
+        "baseline_electricity_kwh": 4800.0,
+        "baseline_gas_kwh": 12000.0,
+        "paper_statements_per_year": 12,
+        "property_epc_rating": "E",
+        "property_type": "SEMI_DETACHED",
+        "vehicle_fuel_type": "petrol"
+      }
+    },
+    "sample_output_insufficient_green_home_unknown_tenure": {
+      "customer_id": "C10077",
+      "product_code": "GP02",
+      "opportunity": "GREEN_HOME",
+      "product_name": "Green Home Loan",
+      "cutoff_date": "2026-06-30",
+      "targetable": false,
+      "targeting_status": "INSUFFICIENT_DATA",
+      "exclusion_reason_codes": [],
+      "missing_fields": [
+        "homeowner_status"
+      ],
+      "requires_human_review": false,
+      "propensity": null,
+      "confidence": null,
+      "reason_codes": [],
+      "impact": null,
+      "grounded_attributes": {
+        "data_cutoff_date": "2026-06-30",
+        "annual_fuel_spend": 1650.0,
+        "annual_mileage_km": 12000.0,
+        "baseline_electricity_kwh": 4800.0,
+        "baseline_gas_kwh": 12000.0,
+        "paper_statements_per_year": 12,
+        "property_epc_rating": "E",
+        "property_type": "SEMI_DETACHED",
+        "vehicle_fuel_type": "petrol"
+      }
+    },
+    "sample_output_excluded_already_paperless": {
+      "customer_id": "C10099",
+      "product_code": "GP04",
+      "opportunity": "PAPERLESS_BANKING",
+      "product_name": "Paperless Banking",
+      "cutoff_date": "2026-06-30",
+      "targetable": false,
+      "targeting_status": "EXCLUDED",
+      "exclusion_reason_codes": [
+        "EXC_ALREADY_PAPERLESS"
+      ],
+      "missing_fields": [],
+      "requires_human_review": false,
+      "propensity": null,
+      "confidence": null,
+      "reason_codes": [],
+      "impact": null,
+      "grounded_attributes": {
+        "data_cutoff_date": "2026-06-30",
+        "annual_fuel_spend": 1650.0,
+        "annual_mileage_km": 12000.0,
+        "baseline_electricity_kwh": 4800.0,
+        "baseline_gas_kwh": 12000.0,
+        "paper_statements_per_year": 12,
+        "property_epc_rating": "E",
+        "property_type": "SEMI_DETACHED",
+        "vehicle_fuel_type": "petrol"
+      }
+    }
+  }
+}
