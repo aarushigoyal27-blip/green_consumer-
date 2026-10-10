@@ -39,7 +39,8 @@ ASSUMPTIONS: Dict[str, Dict[str, Any]] = {
                       "source": "Synthetic data consumption (generate_data.py LITRES_PER_KM); used only if mileage is missing"},
 }
 
-_CAR_ACTIVITY = {"PETROL": "Petrol car average", "DIESEL": "Diesel car average", "HYBRID": "Hybrid car average"}
+# emission.csv has no hybrid factor: hybrids return INSUFFICIENT_DATA rather than a guessed number
+_CAR_ACTIVITY = {"PETROL": "Petrol car average", "DIESEL": "Diesel car average"}
 
 
 def load_factors(path: Path = FACTOR_FILE) -> Dict[str, float]:
@@ -92,7 +93,7 @@ def ev_impact(inputs: Dict[str, Any]) -> Dict[str, Any]:
         km = spend / price / ASSUMPTIONS["litres_per_km"][vtype]
         basis = "FUEL_SPEND_ESTIMATE"
     base_f = _f(_CAR_ACTIVITY[vtype], "km")
-    ev_f = _f("Battery EV car average", "km")
+    ev_f = _f("Battery EV average", "km")
     value = km * (base_f - ev_f)
     assumptions = [f"annual_km={round(km)}", f"ef_{vtype.lower()}_per_km={base_f}", f"ef_ev_per_km={ev_f}"]
     return _record(value, "per-km factor difference (current vehicle vs battery EV), UK Gov GHG factors 2026",
@@ -126,7 +127,7 @@ def green_home_impact(inputs: Dict[str, Any]) -> Dict[str, Any]:
     elec_ok = not _missing(elec) and elec > 0
     if not gas_ok and not elec_ok:
         return insufficient("No gas or electricity consumption on record")
-    gas_f = _f("Natural gas (Gross CV)", "kWh")
+    gas_f = _f("Natural gas", "kWh")
     el_f = _f("Grid electricity", "kWh") + _f("Electricity transmission and distribution losses", "kWh")
     g, e = ASSUMPTIONS["green_home_gas_reduction"], ASSUMPTIONS["green_home_elec_reduction"]
 
@@ -146,7 +147,7 @@ def paperless_impact(inputs: Dict[str, Any]) -> Dict[str, Any]:
         return insufficient("No statement history on record")
     grams = ASSUMPTIONS["paper_grams_per_statement"]["value"]
     paper_kg = n * grams / 1000.0
-    ef_t = _f("Paper and board: paper", "tonnes")
+    ef_t = _f("Paper (primary production)", "tonnes")
     value = paper_kg / 1000.0 * ef_t
     rec = _record(value, "paper production factor x paper no longer printed (postage excluded)",
                   [f"paper_statements_per_year={round(n)}", f"grams_per_statement={grams}", f"ef_paper_per_tonne={ef_t}"],

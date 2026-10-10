@@ -13,10 +13,12 @@ CORE_RULE = (
 )
 
 
-def header(title: str, subtitle: str = "", *, todo: str = "") -> None:
+def header(title: str, subtitle: str = "", *, todo: str = "", live: bool = False) -> None:
     st.title(title)
     if subtitle:
         st.caption(subtitle)
+    if live:  # page is wired to real pipeline output: no placeholder banner
+        return
     st.warning(
         "PLACEHOLDER PAGE – all numbers below are mock values, not model output."
         + (f"\n\n**TODO:** {todo}" if todo else ""),
