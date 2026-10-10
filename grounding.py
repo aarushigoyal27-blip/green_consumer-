@@ -180,7 +180,7 @@ class UnsupportedNumber(str):
         return obj
 
     def __eq__(self, other: Any) -> bool:
-        if super().__eq__(other):
+        if super().__eq__(other) is True:
             return True
         if isinstance(other, (int, float)):
             return math.isclose(self.value, float(other), rel_tol=1e-3, abs_tol=1e-4)
