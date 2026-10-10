@@ -7,6 +7,7 @@ Order is fixed by the core rule (ML predicts · rules decide eligibility · carb
 from __future__ import annotations
 
 from functools import lru_cache
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -53,11 +54,26 @@ def reason_codes(gp: str, r: pd.Series) -> list[str]:
     return out[:3]
 
 
+def _load_saved():
+    import json
+    import joblib
+    d = Path(__file__).parent / "models"
+    if all((d / f"{g}.joblib").exists() for g in MODEL_FEATURES) and (d / "metrics.json").exists():
+        m = json.loads((d / "metrics.json").read_text())
+        for v in m.values():
+            v.setdefault("val_base_rate", None)
+        return {g: joblib.load(d / f"{g}.joblib") for g in MODEL_FEATURES}, m
+    return None
+
+
 @lru_cache(maxsize=1)
 def _models():
-    """Train on the train split only, on ELIGIBLE pairs with a label. Report val PR-AUC for the Evaluation page."""
+    saved = _load_saved()           # models/ written by train.py
+    if saved:
+        return saved
+    """Fallback: train on the train split only, on ELIGIBLE pairs with a label. Report val PR-AUC for the Evaluation page."""
     t = c360.table().set_index("customer_id")
-    lab = pd.read_csv(c360.DATA / "takeup_labels.csv")
+    lab = pd.read_csv(c360.ensure_data() / "takeup_labels.csv")
     lab = lab[lab["eligible"] & lab["took_up"].notna()]
     models, metrics = {}, {}
     for gp, feats in MODEL_FEATURES.items():

@@ -47,8 +47,25 @@ def _read(name: str, data_dir: Path) -> pd.DataFrame:
     return pd.read_csv(data_dir / name)
 
 
+def ensure_data(data_dir: Path = DATA) -> Path:
+    """If data/ is missing (e.g. fresh Streamlit Cloud deploy) generate it once. Deterministic (seed 42)."""
+    import subprocess, sys, tempfile
+    if (data_dir / "customers.csv").exists():
+        return data_dir
+    try:
+        data_dir.mkdir(parents=True, exist_ok=True)
+        target = data_dir
+    except OSError:                       # read-only filesystem -> temp dir
+        target = Path(tempfile.gettempdir()) / "green_data"
+    if not (target / "customers.csv").exists():
+        subprocess.run([sys.executable, str(ROOT / "generate_data.py"), "--n", "2000", "--out", str(target)],
+                       check=True, cwd=str(ROOT))
+    return target
+
+
 def load_raw(data_dir: Path = DATA) -> dict[str, pd.DataFrame]:
     """The ONLY place that knows where data comes from. Swap for DB / API calls."""
+    data_dir = ensure_data(data_dir)
     return {n: _read(f"{n}.csv", data_dir) for n in
             ["customers", "vehicles", "energy_monthly", "digital_usage", "products_held", "transactions"]}
 
