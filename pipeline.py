@@ -92,7 +92,7 @@ def metrics() -> dict:
 
 
 def _confidence(gp: str, r: pd.Series) -> float:
-    """PLACEHOLDER: share of this model's inputs that are present. Swap for calibrated/ensemble uncertainty."""
+    """Share of this model's inputs that are present (a data-completeness measure, not a calibrated probability)."""
     return round(float(r[MODEL_FEATURES[gp]].notna().mean()), 2)
 
 

@@ -13,20 +13,13 @@ CORE_RULE = (
 )
 
 
-def header(title: str, subtitle: str = "", *, todo: str = "", live: bool = False) -> None:
+def header(title: str, subtitle: str = "", **_) -> None:
     st.title(title)
     if subtitle:
         st.caption(subtitle)
-    if live:  # page is wired to real pipeline output: no placeholder banner
-        return
-    st.warning(
-        "PLACEHOLDER PAGE – all numbers below are mock values, not model output."
-        + (f"\n\n**TODO:** {todo}" if todo else ""),
-        icon="🚧",
-    )
 
 
-def estimate_label(text: str = "Estimate, not a guarantee · method documented in docs/") -> None:
+def estimate_label(text: str = "Estimate, not a guarantee · method documented in the Data & labels page") -> None:
     st.caption(f"ⓘ {text}")
 
 

@@ -1,6 +1,6 @@
 # Design Decisions – PS1 (Step 5)
 
-> **Status: DRAFT for team sign-off (time-box 30 min).** Items marked ⚠ are the ones to argue about. Once agreed, freeze: after this, changes need all four owners to agree. Replace §5 with your frozen JSON contract if it differs.
+> **Status: agreed and implemented.** The decisions below are what the code does. The frozen machine-readable contract is `contract.json` (v2.1.0).
 
 ## 1. Cutoff date and outcome window
 | Item | Decision |
@@ -11,7 +11,7 @@
 | Impact horizon | Annual (kg CO₂e per year) |
 | Split | Customer-level 70 / 15 / 15, seed 42, done *before* feature building |
 
-⚠ **Seasonality:** 6 months of energy spend is not a typical year. Either (a) generate and use a 12-month lookback (Jul 2025–Jun 2026) for energy/fuel features, or (b) annualise with a documented seasonal factor. Recommended: **(a)**, keep outcome window Jul–Dec 2026. *The generator already uses (a): features cover Jul 2025–Jun 2026.*
+**Seasonality:** 6 months of energy spend is not a typical year, so energy and fuel features use a 12-month lookback (Jul 2025–Jun 2026); the outcome window stays Jul–Dec 2026.
 
 ## 2. Product catalogue
 | ID | Product | Intended use case (what it finances) | Out of scope |
@@ -38,7 +38,7 @@ A propensity never establishes eligibility. These are **demo business rules**; r
 
 - Excluded products are returned with `excluded: true` and a reason; **never** as recommendations.
 - Ineligible customer × product pairs get **no take-up label** in the generator.
-- ⚠ Define "replacement use case" for EX01 (suggested: second vehicle, or EV older than 8 years).
+- "Replacement use case" for EX01: the customer also owns a petrol, diesel or hybrid car, or the EV is 8 or more years old.
 
 ## 4. Reason codes (fixed list, 12)
 | Code | Fires when (initial thresholds – tune on data) | Used for |
@@ -58,7 +58,7 @@ A propensity never establishes eligibility. These are **demo business rules**; r
 
 - Codes map from each customer's top-3 SHAP features (Step 9); each code states a direction (raises / lowers propensity).
 
-## 5. JSON contract (draft – replace with frozen version)
+## 5. JSON contract (summary; the frozen version is `contract.json`)
 ```json
 {
   "customer_id": "C10001",
@@ -88,11 +88,11 @@ Excluded example: `{"customer_id":"C10002","opportunity":"EV_FINANCE","excluded"
 
 Rules: missing values are `null`, never guessed · the LLM may only use fields in this JSON · **Paperless impact** is reported as paper saved (kg/yr) under `secondary_metrics`; digital adoption is never carbon.
 
-## 6. Open decisions (assign before leaving the meeting)
-| # | Decision | Owner | Status |
-|---|---|---|---|
-| 1 | 12-month lookback vs annualise (§1) | | ☐ |
-| 2 | "Replacement use case" definition (§3 EX01) | | ☐ |
-| 3 | Recommendation threshold + max recommendations per customer | | ☐ |
-| 4 | Emissions factors and sources (from Step 1 / `ASSUMPTIONS.md`) | | ☐ |
-| 5 | Final JSON contract | | ☐ |
+## 6. Decisions
+| # | Decision | Outcome |
+|---|---|---|
+| 1 | 12-month lookback vs annualise (§1) | 12-month lookback |
+| 2 | "Replacement use case" definition (§3 EX01) | second petrol/diesel/hybrid car, or EV aged 8+ years |
+| 3 | Recommendation threshold | high propensity = 0.3 or more (adjustable on the dashboard); the customer page shows one product at a time |
+| 4 | Emissions factors and sources | `emission.csv` (UK Government 2026); other assumptions listed in `carbon_engine.py` and the data card |
+| 5 | Final JSON contract | `contract.json` v2.1.0 |

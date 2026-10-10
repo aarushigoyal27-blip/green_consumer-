@@ -23,8 +23,8 @@ st.table(
             "I. Test-set predictions",
         ],
         "Where it lives": [
-            "This app", "README.md", "TODO models/", "TODO src/preprocess/", "TODO prompts/",
-            "docs/architecture.mmd", "docs/eval_report.md", "docs/responsible_ai_note.md", "TODO predictions/",
+            "This app", "README.md", "train.py → models/", "customer360.py (features), generate_data.py", "grounding.py (system prompt, checker)",
+            "architecture.mmd (Architecture page)", "eval_report.md, evaluate.py", "responsible_ai_note.md", "train.py → predictions/test_predictions.csv",
         ],
     }
 )

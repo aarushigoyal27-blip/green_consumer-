@@ -4,7 +4,7 @@ import customer360 as c360
 import pipeline
 from ui import estimate_label, header
 
-header("Customer view", "PS1 · FR5 customer insight, FR7 explainability", live=True)
+header("Customer view", "PS1 · FR5 customer insight, FR7 explainability")
 
 ids = c360.table()["customer_id"].tolist()
 customer = st.selectbox("Customer", ids[:200])

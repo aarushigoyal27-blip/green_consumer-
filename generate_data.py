@@ -31,7 +31,7 @@ import numpy as np
 import pandas as pd
 
 # ------------------------------------------------------------------ config
-SEED = 42  # TODO: import from your shared config (Step 2) once it exists
+SEED = 42  # single seed for the whole project
 CUTOFF = pd.Timestamp("2026-06-30")
 MONTHS = pd.period_range("2025-07", "2026-06", freq="M")  # feature window (12 months)
 OUTCOME_START = pd.Timestamp("2026-07-01")

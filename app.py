@@ -16,7 +16,7 @@ pages = {
         st.Page("evaluation.py", title="Evaluation", icon="🧪"),
         st.Page("explainability.py", title="Explainability & RAI", icon="🔍"),
         st.Page("architecture.py", title="Architecture", icon="🧱"),
-        st.Page("docs_viewer.py", title="Doc templates", icon="📄"),
+        st.Page("docs_viewer.py", title="Documentation", icon="📄"),
     ],
 }
 st.navigation(pages).run()

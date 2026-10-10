@@ -4,7 +4,7 @@ import streamlit as st
 import pipeline
 from ui import header
 
-header("Business dashboard", "PS1 · FR6 business insights", live=True)
+header("Business dashboard", "PS1 · FR6 business insights")
 
 THRESH = st.slider("High-propensity threshold", 0.05, 0.9, 0.3, 0.05)
 
