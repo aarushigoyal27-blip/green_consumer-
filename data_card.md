@@ -45,13 +45,21 @@
 | Conflicting records (injected scenario tests) | `TODO` |
 | Class balance | `TODO` |
 
-## 6. Emissions factors *(include file with submission)*
-| Factor | Value | Unit | Source (name, year, URL) | Used by |
+## 6. Emissions factors *(include `emission.csv` with the submission)*
+Source file: `emission.csv` (factor_year 2026; sheet names match the UK Government GHG Conversion Factors workbook – ⚠ **confirm publisher, edition and URL and cite them in `ASSUMPTIONS.md`**).
+
+| Factor | Value | Unit | Scope | Used by |
 |---|---|---|---|---|
-| Grid electricity (home-energy opportunities) | | kg CO₂e/kWh | | |
-| Petrol / diesel | | kg CO₂e/litre | | EV Finance baseline |
-| Public transport | | kg CO₂e/passenger-km | | |
-| Paper statement | | kg CO₂e/statement | | Paperless |
+| Grid electricity | 0.13096 | kg CO₂e/kWh | 2 | Solar, Green Home |
+| Electricity T&D losses | 0.01299 | kg CO₂e/kWh | 3 | ⚠ decide: add for consumer view? |
+| Natural gas (Gross CV) | 0.18231 | kg CO₂e/kWh | 1 | Green Home (UK bills are gross-CV kWh) |
+| Petrol car, average | 0.17048 | kg CO₂e/km | 3 | GP01 baseline |
+| Diesel car, average | 0.17265 | kg CO₂e/km | 3 | GP01 baseline |
+| Battery EV, average (incl. T&D) | 0.06012 | kg CO₂e/km | 3 | GP01 after-state |
+| Petrol / Diesel | 2.15549 / 2.58354 | kg CO₂e/litre | 1 | Optional fuel-spend cross-check |
+| Paper (primary production) | 1198.23866 | kg CO₂e/tonne | 3 | Paperless (needs grams-per-statement assumption) |
+
+**Gaps (no factor in the file):** hybrid vehicles (generator creates them) · public transport per km · solar yield (kWh/kWp/yr – source from MCS/PVGIS) · Green Home % reduction · grams of paper per statement.
 
 ## 7. Assumptions and limitations
 - `TODO` *(what the data cannot support; where synthetic realism is weak)*

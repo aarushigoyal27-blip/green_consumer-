@@ -11,7 +11,7 @@
 | Impact horizon | Annual (kg CO₂e per year) |
 | Split | Customer-level 70 / 15 / 15, seed 42, done *before* feature building |
 
-⚠ **Seasonality:** 6 months of energy spend is not a typical year. Either (a) generate and use a 12-month lookback (Jul 2025–Jun 2026) for energy/fuel features, or (b) annualise with a documented seasonal factor. Recommended: **(a)**, keep outcome window Jul–Dec 2026.
+⚠ **Seasonality:** 6 months of energy spend is not a typical year. Either (a) generate and use a 12-month lookback (Jul 2025–Jun 2026) for energy/fuel features, or (b) annualise with a documented seasonal factor. Recommended: **(a)**, keep outcome window Jul–Dec 2026. *The generator already uses (a): features cover Jul 2025–Jun 2026.*
 
 ## 2. Product catalogue
 | ID | Product | Intended use case (what it finances) | Out of scope |
@@ -33,7 +33,8 @@ A propensity never establishes eligibility. These are **demo business rules**; r
 | EX02 | Not a home owner (renter / living with family) | GP02, GP03 | `NOT_HOME_OWNER` |
 | EX03 | Already on paperless statements | GP04 | `ALREADY_PAPERLESS` |
 | EX04 | Already holds the product | that product | `ALREADY_HOLDS_PRODUCT` |
-| EX05 | Key input fields missing (e.g. no vehicle data for GP01) | that product | `INSUFFICIENT_DATA` |
+| EX05 | Key input fields missing (e.g. mileage missing for GP01) | that product | `INSUFFICIENT_DATA` |
+| EX06 | No vehicle at all | GP01 | `NO_VEHICLE` *(added in the generator)* |
 
 - Excluded products are returned with `excluded: true` and a reason; **never** as recommendations.
 - Ineligible customer × product pairs get **no take-up label** in the generator.
