@@ -1,0 +1,121 @@
+category,template
+Fuel,SHELL {n} {city}
+Fuel,BP CONNECT {n}
+Fuel,ESSO {n} {city}
+Fuel,TESCO PFS {n}
+Fuel,SAINSBURYS FUEL {n}
+Fuel,ASDA PETROL {n}
+Fuel,MORRISONS PETROL {n}
+Fuel,TEXACO {n} {city}
+Fuel,GULF {n}
+Fuel,JET {n} {city}
+Fuel,MFG {n}
+Fuel,APPLEGREEN {n}
+Fuel,MOTO {n} FUEL
+Fuel,MURCO {n}
+Fuel,CERTAS FUEL {n} {city}
+Electricity,OCTOPUS ENERGY ELEC DD {ref}
+Electricity,EDF ENERGY ELECTRICITY DD {ref}
+Electricity,E.ON NEXT ELEC DD {ref}
+Electricity,OVO ENERGY ELEC DD {ref}
+Electricity,SCOTTISH POWER ELEC DD {ref}
+Electricity,BRITISH GAS ELECTRICITY ONLY DD
+Electricity,UTILITA ELECTRIC DD {ref}
+Electricity,SO ENERGY ELEC DD {ref}
+Electricity,SHELL ENERGY ELEC DD {ref}
+Electricity,GREEN NETWORK ENERGY ELEC {ref}
+Electricity,OPUS ENERGY ELEC DD {ref}
+Electricity,EBICO ELEC DD {ref}
+Electricity,UNITED GRID ELEC DD {ref}
+Electricity,PUREPLANET ELEC DD {ref}
+Electricity,ENSTROM POWER ELEC DD {ref}
+Gas,OCTOPUS ENERGY GAS DD {ref}
+Gas,EDF ENERGY GAS DD {ref}
+Gas,E.ON NEXT GAS DD {ref}
+Gas,OVO ENERGY GAS DD {ref}
+Gas,SCOTTISH POWER GAS DD {ref}
+Gas,BRITISH GAS GAS ONLY DD
+Gas,UTILITA GAS DD {ref}
+Gas,SO ENERGY GAS DD {ref}
+Gas,SHELL ENERGY GAS DD {ref}
+Gas,GREEN NETWORK ENERGY GAS {ref}
+Gas,OPUS ENERGY GAS DD {ref}
+Gas,EBICO GAS DD {ref}
+Gas,UNITED GRID GAS DD {ref}
+Gas,PUREPLANET GAS DD {ref}
+Gas,ENSTROM GAS DD {ref}
+Utilities,OCTOPUS ENERGY DD {ref}
+Utilities,BRITISH GAS DUAL FUEL DD
+Utilities,EDF ENERGY DD {ref}
+Utilities,OVO ENERGY DD {ref}
+Utilities,E.ON NEXT DD {ref}
+Utilities,THAMES WATER DD
+Utilities,SEVERN TRENT WATER DD
+Utilities,UNITED UTILITIES DD
+Utilities,ANGLIAN WATER DD
+Utilities,YORKSHIRE WATER DD
+Utilities,DWR CYMRU WELSH WATER
+Utilities,SCOTTISH WATER DD
+Utilities,SOUTHERN WATER DD
+Utilities,BT BROADBAND DD {ref}
+Utilities,VIRGIN MEDIA DD {ref}
+Public Transport,TFL TRAVEL CH
+Public Transport,TRAINLINE {ref}
+Public Transport,NATIONAL RAIL {n}
+Public Transport,NORTHERN RAIL {ref}
+Public Transport,LNER {ref}
+Public Transport,GWR {ref}
+Public Transport,AVANTI WEST COAST {ref}
+Public Transport,STAGECOACH {city}
+Public Transport,FIRST BUS {city}
+Public Transport,ARRIVA {city}
+Public Transport,METROLINK {ref}
+Public Transport,TYNE AND WEAR METRO
+Public Transport,SCOTRAIL {ref}
+Public Transport,TFW RAIL {ref}
+Public Transport,OYSTER AUTOTOP
+Home Improvement,B&Q {n} {city}
+Home Improvement,WICKES {n}
+Home Improvement,SCREWFIX {n}
+Home Improvement,TOOLSTATION {n}
+Home Improvement,HOMEBASE {n}
+Home Improvement,TRAVIS PERKINS {city}
+Home Improvement,JEWSON {city}
+Home Improvement,SELCO BUILDERS WAREHOUSE
+Home Improvement,PLUMBCENTER {n}
+Home Improvement,HOWDENS JOINERY {n}
+Home Improvement,DULUX DECORATOR CENTRE {n}
+Home Improvement,INSULATION SUPPLIES LTD {ref}
+Home Improvement,DOUBLE GLAZING INSTALLER {ref}
+Home Improvement,WICKES KITCHENS {city}
+Home Improvement,IRONMONGERY DIRECT {ref}
+Automotive,HALFORDS {n}
+Automotive,KWIK FIT {city}
+Automotive,ATS EUROMASTER {n}
+Automotive,NATIONAL TYRES {city}
+Automotive,DVLA VEHICLE TAX
+Automotive,MOT TEST CENTRE {city}
+Automotive,CAR WASH {city}
+Automotive,HAND CAR WASH {n}
+Automotive,SHELL CAR WASH {n}
+Automotive,AA MEMBERSHIP {ref}
+Automotive,RAC BREAKDOWN {ref}
+Automotive,EURO CAR PARTS {n}
+Automotive,HALFORDS AUTOCENTRE {n}
+Automotive,VW SERVICE CENTRE {city}
+Automotive,FORD DEALER SERVICE {city}
+Other,TESCO STORES {n}
+Other,SAINSBURYS S/MKTS {n}
+Other,ASDA {n}
+Other,AMAZON.CO.UK*{ref}
+Other,NETFLIX.COM
+Other,SPOTIFY {ref}
+Other,COSTA COFFEE {n}
+Other,PRET A MANGER {n}
+Other,DELIVEROO {ref}
+Other,BOOTS {n}
+Other,GREGGS {n}
+Other,NEXT RETAIL {n}
+Other,PAYPAL *{ref}
+Other,ODEON CINEMAS {city}
+Other,PUREGYM {city}

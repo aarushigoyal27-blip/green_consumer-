@@ -1,0 +1,48 @@
+{
+  "split_fractions": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "prevalence_among_eligible": {
+    "GP01": 0.077,
+    "GP02": 0.12,
+    "GP03": 0.082,
+    "GP04": 0.242
+  },
+  "eligible_counts": {
+    "GP01": 1328,
+    "GP02": 1054,
+    "GP03": 1056,
+    "GP04": 1170
+  },
+  "exclusion_counts": {
+    "GP01:ALREADY_OWNS_EV": 218,
+    "GP01:NO_VEHICLE": 454,
+    "GP02:ALREADY_HOLDS_PRODUCT": 31,
+    "GP02:NOT_HOME_OWNER": 915,
+    "GP03:ALREADY_HOLDS_PRODUCT": 29,
+    "GP03:NOT_HOME_OWNER": 915,
+    "GP04:ALREADY_PAPERLESS": 830
+  },
+  "ev_fuel_spend_auc": 0.649,
+  "ev_fuel_spend_corr": 0.176,
+  "transactions": 667520,
+  "category_share": {
+    "Other": 0.503,
+    "Public Transport": 0.313,
+    "Utilities": 0.08,
+    "Fuel": 0.052,
+    "Electricity": 0.019,
+    "Gas": 0.014,
+    "Home Improvement": 0.011,
+    "Automotive": 0.007
+  },
+  "missing_rates": {
+    "annual_mileage_km": 0.246,
+    "vehicle_type_NONE": 0.227
+  },
+  "seed": 42,
+  "n_customers": 2000,
+  "cutoff": "2026-06-30"
+}

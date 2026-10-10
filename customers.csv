@@ -1,0 +1,2001 @@
+customer_id,region,age_band,income_band,tenure,home_owner,gas_connected,statement_pref,split
+C10001,Scotland,45-59,Mid,FAMILY,False,True,PAPER,val
+C10002,Scotland,30-44,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10003,Wales,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10004,West Midlands,18-29,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10005,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10006,Yorkshire and The Humber,30-44,Mid,RENT,False,True,MIXED,train
+C10007,Northern Ireland,60+,Mid,RENT,False,False,PAPER,train
+C10008,South West,30-44,Mid,RENT,False,True,DIGITAL,test
+C10009,Yorkshire and The Humber,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10010,West Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10011,London,30-44,Low,RENT,False,True,MIXED,train
+C10012,Yorkshire and The Humber,45-59,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C10013,East Midlands,30-44,Mid,RENT,False,True,DIGITAL,train
+C10014,Scotland,18-29,Low,RENT,False,True,MIXED,train
+C10015,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10016,North West,30-44,Low,RENT,False,False,PAPER,val
+C10017,Scotland,60+,Low,RENT,False,True,MIXED,train
+C10018,North East,60+,High,FAMILY,False,True,PAPER,train
+C10019,South East,30-44,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10020,London,30-44,Mid,RENT,False,True,PAPER,test
+C10021,Yorkshire and The Humber,60+,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10022,East of England,60+,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10023,South West,60+,Low,RENT,False,True,PAPER,val
+C10024,Wales,18-29,Mid,RENT,False,True,DIGITAL,train
+C10025,North West,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10026,London,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10027,North West,45-59,Mid,RENT,False,True,PAPER,train
+C10028,London,60+,Low,RENT,False,True,DIGITAL,train
+C10029,South East,30-44,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C10030,South West,45-59,Mid,RENT,False,True,DIGITAL,train
+C10031,West Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10032,South East,45-59,Mid,RENT,False,True,DIGITAL,test
+C10033,North West,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10034,South East,45-59,Mid,RENT,False,True,PAPER,test
+C10035,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C10036,South East,60+,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C10037,North East,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10038,Scotland,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10039,South East,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10040,North West,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10041,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10042,Wales,30-44,Low,FAMILY,False,True,DIGITAL,train
+C10043,South East,60+,Low,RENT,False,True,DIGITAL,train
+C10044,North West,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10045,South East,30-44,Low,RENT,False,True,MIXED,train
+C10046,South West,45-59,Low,RENT,False,True,PAPER,train
+C10047,West Midlands,30-44,Low,FAMILY,False,True,DIGITAL,val
+C10048,North East,18-29,High,RENT,False,False,PAPER,train
+C10049,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10050,London,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10051,London,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,val
+C10052,Yorkshire and The Humber,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10053,West Midlands,45-59,Low,RENT,False,True,DIGITAL,val
+C10054,Scotland,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10055,Wales,60+,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C10056,London,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10057,Scotland,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10058,South East,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10059,Wales,18-29,Low,RENT,False,True,PAPER,train
+C10060,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10061,Northern Ireland,60+,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10062,Scotland,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10063,South East,30-44,Mid,RENT,False,True,PAPER,val
+C10064,East of England,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10065,South East,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C10066,London,30-44,Mid,RENT,False,True,DIGITAL,train
+C10067,South East,30-44,Mid,RENT,False,True,PAPER,train
+C10068,North West,18-29,Low,RENT,False,True,DIGITAL,train
+C10069,North West,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10070,East Midlands,45-59,Low,OWNER_OUTRIGHT,True,False,MIXED,train
+C10071,North West,60+,Mid,RENT,False,True,DIGITAL,test
+C10072,West Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10073,North East,18-29,Mid,RENT,False,True,DIGITAL,train
+C10074,North West,60+,Mid,FAMILY,False,True,PAPER,train
+C10075,South East,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10076,London,18-29,Mid,RENT,False,True,PAPER,train
+C10077,London,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10078,South West,30-44,Low,RENT,False,True,PAPER,test
+C10079,South East,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10080,South West,45-59,Low,RENT,False,True,DIGITAL,train
+C10081,North West,45-59,Mid,RENT,False,True,DIGITAL,val
+C10082,North West,18-29,Mid,RENT,False,True,PAPER,train
+C10083,South East,60+,Mid,FAMILY,False,True,PAPER,train
+C10084,London,60+,Mid,RENT,False,True,MIXED,train
+C10085,Yorkshire and The Humber,18-29,High,RENT,False,False,PAPER,train
+C10086,East of England,18-29,Mid,FAMILY,False,False,DIGITAL,train
+C10087,East of England,30-44,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10088,East of England,45-59,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C10089,London,30-44,Mid,RENT,False,True,DIGITAL,test
+C10090,South East,18-29,High,OWNER_OUTRIGHT,True,True,MIXED,test
+C10091,East of England,30-44,Low,RENT,False,True,PAPER,train
+C10092,East Midlands,45-59,Low,RENT,False,True,PAPER,train
+C10093,North West,60+,Mid,RENT,False,True,PAPER,train
+C10094,South East,60+,Mid,RENT,False,True,PAPER,val
+C10095,West Midlands,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10096,North East,18-29,Mid,RENT,False,True,DIGITAL,train
+C10097,London,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10098,Wales,30-44,Low,RENT,False,True,PAPER,train
+C10099,East of England,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10100,East Midlands,60+,Low,RENT,False,True,DIGITAL,train
+C10101,East of England,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10102,South East,18-29,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10103,Yorkshire and The Humber,45-59,Mid,RENT,False,True,PAPER,train
+C10104,South West,45-59,Low,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C10105,Wales,60+,High,OWNER_MORTGAGE,True,False,PAPER,test
+C10106,Scotland,18-29,Low,RENT,False,True,DIGITAL,train
+C10107,North West,30-44,Mid,RENT,False,True,DIGITAL,train
+C10108,Scotland,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10109,Northern Ireland,45-59,High,OWNER_MORTGAGE,True,False,MIXED,val
+C10110,South West,18-29,Mid,RENT,False,True,PAPER,train
+C10111,North East,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10112,South West,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10113,South East,30-44,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C10114,London,60+,Mid,FAMILY,False,True,DIGITAL,train
+C10115,Yorkshire and The Humber,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10116,South East,30-44,High,OWNER_OUTRIGHT,True,False,MIXED,train
+C10117,London,30-44,High,FAMILY,False,True,PAPER,train
+C10118,East of England,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10119,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10120,South East,18-29,Low,RENT,False,True,DIGITAL,train
+C10121,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10122,South East,18-29,Mid,RENT,False,True,DIGITAL,train
+C10123,South East,18-29,Mid,RENT,False,True,DIGITAL,train
+C10124,Scotland,60+,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10125,Scotland,60+,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C10126,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10127,South West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10128,South East,60+,Low,RENT,False,False,PAPER,test
+C10129,South West,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10130,South East,45-59,Low,FAMILY,False,False,DIGITAL,train
+C10131,South East,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10132,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C10133,London,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10134,Northern Ireland,18-29,Mid,RENT,False,False,DIGITAL,test
+C10135,South West,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10136,South East,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10137,South East,45-59,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10138,East Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10139,Scotland,45-59,Low,RENT,False,True,DIGITAL,train
+C10140,South East,30-44,Low,RENT,False,True,DIGITAL,train
+C10141,South East,18-29,Mid,RENT,False,True,DIGITAL,val
+C10142,East Midlands,60+,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10143,South West,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10144,London,18-29,Mid,RENT,False,True,MIXED,train
+C10145,London,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10146,Scotland,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C10147,North West,18-29,Low,FAMILY,False,True,PAPER,train
+C10148,South West,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C10149,London,60+,Mid,RENT,False,True,MIXED,train
+C10150,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10151,South East,45-59,High,FAMILY,False,True,DIGITAL,train
+C10152,North West,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10153,Wales,45-59,Low,RENT,False,True,PAPER,train
+C10154,South West,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10155,South East,45-59,Mid,RENT,False,True,DIGITAL,train
+C10156,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10157,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10158,South West,30-44,High,RENT,False,True,DIGITAL,test
+C10159,Northern Ireland,45-59,Low,OWNER_OUTRIGHT,True,False,DIGITAL,test
+C10160,East of England,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10161,North East,30-44,Mid,RENT,False,True,DIGITAL,train
+C10162,South East,18-29,Low,RENT,False,True,MIXED,train
+C10163,West Midlands,30-44,Mid,FAMILY,False,False,PAPER,train
+C10164,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10165,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10166,London,60+,Low,RENT,False,True,PAPER,train
+C10167,North East,30-44,Mid,RENT,False,True,PAPER,train
+C10168,North East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10169,East of England,60+,Low,RENT,False,True,MIXED,test
+C10170,North West,18-29,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10171,East of England,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10172,Scotland,30-44,Low,RENT,False,True,PAPER,train
+C10173,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10174,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10175,South East,30-44,Mid,RENT,False,True,DIGITAL,train
+C10176,Yorkshire and The Humber,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10177,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10178,South East,30-44,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10179,South West,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10180,London,45-59,Mid,OWNER_MORTGAGE,True,False,MIXED,train
+C10181,West Midlands,45-59,Mid,RENT,False,True,DIGITAL,test
+C10182,North West,60+,Mid,FAMILY,False,True,MIXED,train
+C10183,London,18-29,Mid,OWNER_MORTGAGE,True,False,PAPER,test
+C10184,East of England,45-59,Mid,RENT,False,True,PAPER,train
+C10185,Yorkshire and The Humber,30-44,Low,RENT,False,True,MIXED,val
+C10186,Scotland,45-59,Low,RENT,False,True,PAPER,train
+C10187,East Midlands,60+,Low,OWNER_OUTRIGHT,True,True,MIXED,val
+C10188,London,18-29,Low,RENT,False,True,DIGITAL,test
+C10189,London,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10190,Yorkshire and The Humber,30-44,Low,RENT,False,True,PAPER,train
+C10191,West Midlands,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10192,West Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10193,North West,30-44,Low,RENT,False,False,MIXED,val
+C10194,South East,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10195,North West,30-44,High,RENT,False,True,MIXED,train
+C10196,North West,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10197,South East,60+,Mid,RENT,False,False,PAPER,train
+C10198,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C10199,South West,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10200,North West,30-44,Low,FAMILY,False,True,DIGITAL,train
+C10201,South West,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10202,Scotland,18-29,Low,FAMILY,False,True,PAPER,val
+C10203,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10204,East of England,18-29,Low,RENT,False,True,PAPER,train
+C10205,East Midlands,60+,Mid,RENT,False,True,PAPER,train
+C10206,Yorkshire and The Humber,18-29,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10207,East of England,18-29,Mid,RENT,False,True,PAPER,train
+C10208,North West,18-29,Low,RENT,False,True,MIXED,val
+C10209,East of England,30-44,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C10210,East of England,18-29,Low,RENT,False,True,DIGITAL,train
+C10211,Yorkshire and The Humber,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C10212,Scotland,45-59,Low,RENT,False,True,PAPER,train
+C10213,South West,18-29,Low,RENT,False,True,DIGITAL,train
+C10214,Yorkshire and The Humber,60+,Low,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10215,East Midlands,18-29,Mid,RENT,False,True,PAPER,train
+C10216,Scotland,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10217,South East,18-29,Mid,RENT,False,True,PAPER,val
+C10218,East of England,45-59,Low,RENT,False,True,DIGITAL,train
+C10219,South West,18-29,Low,OWNER_OUTRIGHT,True,False,MIXED,train
+C10220,East Midlands,18-29,Mid,FAMILY,False,True,PAPER,train
+C10221,North East,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10222,London,60+,Low,RENT,False,True,MIXED,test
+C10223,London,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10224,Scotland,45-59,High,RENT,False,True,DIGITAL,test
+C10225,South West,18-29,High,FAMILY,False,False,DIGITAL,val
+C10226,South West,18-29,Mid,RENT,False,True,DIGITAL,train
+C10227,Wales,60+,High,RENT,False,True,PAPER,train
+C10228,West Midlands,18-29,High,RENT,False,True,MIXED,val
+C10229,South East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10230,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10231,West Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10232,London,18-29,Low,RENT,False,True,DIGITAL,train
+C10233,South East,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10234,Yorkshire and The Humber,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10235,Wales,18-29,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C10236,London,30-44,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10237,North West,18-29,Low,RENT,False,True,PAPER,train
+C10238,London,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10239,East Midlands,60+,Mid,RENT,False,True,DIGITAL,test
+C10240,Wales,60+,High,OWNER_MORTGAGE,True,True,PAPER,val
+C10241,Scotland,30-44,Mid,RENT,False,True,DIGITAL,train
+C10242,South East,18-29,Low,RENT,False,True,PAPER,val
+C10243,Wales,45-59,High,OWNER_MORTGAGE,True,False,DIGITAL,test
+C10244,Yorkshire and The Humber,30-44,Low,FAMILY,False,True,MIXED,test
+C10245,Northern Ireland,18-29,High,RENT,False,False,PAPER,test
+C10246,Yorkshire and The Humber,45-59,Mid,RENT,False,True,PAPER,train
+C10247,South East,45-59,Mid,FAMILY,False,False,PAPER,train
+C10248,West Midlands,60+,Mid,FAMILY,False,True,PAPER,test
+C10249,Yorkshire and The Humber,18-29,Mid,RENT,False,True,MIXED,train
+C10250,South East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10251,South East,18-29,Mid,RENT,False,True,DIGITAL,train
+C10252,Wales,45-59,Low,RENT,False,True,PAPER,val
+C10253,East of England,30-44,Mid,RENT,False,True,PAPER,train
+C10254,North West,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C10255,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10256,Wales,60+,Low,RENT,False,True,PAPER,test
+C10257,East Midlands,30-44,Mid,FAMILY,False,True,MIXED,val
+C10258,West Midlands,60+,Mid,FAMILY,False,True,PAPER,train
+C10259,London,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10260,North West,30-44,Mid,RENT,False,True,DIGITAL,train
+C10261,South West,18-29,Low,RENT,False,True,PAPER,train
+C10262,London,18-29,High,RENT,False,False,PAPER,train
+C10263,South West,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10264,East Midlands,30-44,Mid,RENT,False,True,DIGITAL,train
+C10265,East of England,18-29,Mid,RENT,False,True,DIGITAL,train
+C10266,Scotland,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10267,Yorkshire and The Humber,60+,High,RENT,False,True,PAPER,train
+C10268,East of England,30-44,Low,OWNER_MORTGAGE,True,False,PAPER,train
+C10269,West Midlands,30-44,High,OWNER_MORTGAGE,True,False,PAPER,test
+C10270,Wales,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10271,East of England,18-29,Mid,RENT,False,True,DIGITAL,train
+C10272,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10273,South East,30-44,Mid,RENT,False,True,DIGITAL,train
+C10274,East of England,18-29,Mid,RENT,False,False,DIGITAL,train
+C10275,South West,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10276,East of England,30-44,Mid,RENT,False,True,DIGITAL,train
+C10277,West Midlands,45-59,Mid,RENT,False,True,PAPER,train
+C10278,South East,60+,Low,RENT,False,True,PAPER,train
+C10279,North West,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10280,Yorkshire and The Humber,30-44,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10281,Yorkshire and The Humber,45-59,High,OWNER_MORTGAGE,True,True,PAPER,val
+C10282,West Midlands,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10283,North West,30-44,High,FAMILY,False,True,PAPER,train
+C10284,South West,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10285,South West,60+,Low,RENT,False,False,PAPER,train
+C10286,Northern Ireland,30-44,Low,RENT,False,False,PAPER,test
+C10287,North West,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10288,London,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10289,South East,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10290,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10291,North West,30-44,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C10292,Scotland,30-44,High,OWNER_MORTGAGE,True,False,MIXED,test
+C10293,East of England,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10294,North West,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10295,North West,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C10296,London,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10297,South West,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C10298,Scotland,18-29,High,RENT,False,True,DIGITAL,test
+C10299,London,30-44,Mid,RENT,False,False,MIXED,test
+C10300,London,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10301,North West,18-29,Mid,RENT,False,True,DIGITAL,val
+C10302,London,45-59,Low,RENT,False,True,PAPER,train
+C10303,Northern Ireland,45-59,Low,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C10304,South West,45-59,Low,RENT,False,True,DIGITAL,train
+C10305,East of England,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10306,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10307,London,30-44,Mid,FAMILY,False,True,PAPER,train
+C10308,East of England,45-59,Low,FAMILY,False,True,PAPER,test
+C10309,North West,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10310,Wales,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10311,South East,45-59,Low,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10312,South West,30-44,Low,RENT,False,True,PAPER,train
+C10313,South West,18-29,High,RENT,False,True,MIXED,train
+C10314,South West,30-44,Mid,RENT,False,True,PAPER,train
+C10315,South East,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10316,East of England,30-44,Low,RENT,False,True,DIGITAL,test
+C10317,West Midlands,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10318,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10319,West Midlands,45-59,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C10320,West Midlands,60+,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C10321,Yorkshire and The Humber,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C10322,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10323,Scotland,45-59,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C10324,Yorkshire and The Humber,45-59,Low,FAMILY,False,True,MIXED,train
+C10325,London,45-59,Low,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10326,East of England,60+,Low,RENT,False,True,DIGITAL,val
+C10327,London,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10328,North West,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10329,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10330,East Midlands,18-29,Low,FAMILY,False,False,PAPER,train
+C10331,North West,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10332,London,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10333,South West,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10334,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10335,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C10336,South East,45-59,Mid,FAMILY,False,True,DIGITAL,val
+C10337,West Midlands,45-59,High,RENT,False,True,DIGITAL,train
+C10338,North West,60+,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10339,Yorkshire and The Humber,30-44,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10340,West Midlands,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10341,North West,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10342,East Midlands,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10343,West Midlands,30-44,Low,RENT,False,True,DIGITAL,train
+C10344,East of England,18-29,Low,OWNER_OUTRIGHT,True,True,PAPER,val
+C10345,East Midlands,60+,Low,FAMILY,False,True,DIGITAL,train
+C10346,Northern Ireland,45-59,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10347,Yorkshire and The Humber,60+,Low,RENT,False,True,PAPER,train
+C10348,West Midlands,60+,Mid,RENT,False,True,DIGITAL,test
+C10349,North West,60+,Low,RENT,False,True,DIGITAL,train
+C10350,West Midlands,30-44,High,OWNER_MORTGAGE,True,True,PAPER,val
+C10351,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10352,Wales,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10353,South East,18-29,Mid,FAMILY,False,True,PAPER,val
+C10354,London,45-59,Low,RENT,False,True,DIGITAL,train
+C10355,North West,60+,Low,RENT,False,True,PAPER,train
+C10356,West Midlands,60+,High,RENT,False,True,MIXED,train
+C10357,Northern Ireland,60+,Mid,RENT,False,False,PAPER,train
+C10358,South East,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10359,South West,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10360,London,18-29,Mid,RENT,False,True,PAPER,train
+C10361,Wales,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10362,East Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10363,Wales,60+,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10364,Yorkshire and The Humber,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10365,North East,18-29,Low,RENT,False,True,PAPER,train
+C10366,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10367,West Midlands,18-29,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10368,North West,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10369,London,30-44,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10370,West Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10371,South East,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10372,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10373,North East,45-59,Low,RENT,False,True,DIGITAL,train
+C10374,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C10375,London,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10376,North West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10377,South West,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10378,South West,18-29,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C10379,East of England,30-44,Mid,RENT,False,True,DIGITAL,train
+C10380,South East,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10381,South East,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10382,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,test
+C10383,North West,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10384,North West,60+,Mid,RENT,False,True,PAPER,train
+C10385,North West,45-59,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10386,Scotland,18-29,High,RENT,False,True,DIGITAL,train
+C10387,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10388,London,45-59,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C10389,West Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10390,Yorkshire and The Humber,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10391,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10392,London,30-44,Low,RENT,False,False,PAPER,val
+C10393,Northern Ireland,45-59,Mid,RENT,False,False,MIXED,test
+C10394,Yorkshire and The Humber,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10395,South East,60+,Mid,RENT,False,True,PAPER,train
+C10396,London,18-29,Low,RENT,False,True,DIGITAL,val
+C10397,Yorkshire and The Humber,18-29,Mid,RENT,False,True,DIGITAL,train
+C10398,North West,30-44,Low,RENT,False,True,DIGITAL,train
+C10399,West Midlands,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10400,Scotland,60+,High,RENT,False,False,PAPER,test
+C10401,East Midlands,18-29,Mid,RENT,False,True,PAPER,train
+C10402,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,test
+C10403,East of England,30-44,High,RENT,False,True,MIXED,train
+C10404,West Midlands,45-59,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10405,North East,60+,Low,RENT,False,True,PAPER,test
+C10406,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10407,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C10408,East of England,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10409,South West,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10410,Yorkshire and The Humber,30-44,Low,RENT,False,False,PAPER,train
+C10411,North West,18-29,Low,FAMILY,False,True,DIGITAL,train
+C10412,South West,60+,Low,RENT,False,True,PAPER,train
+C10413,London,45-59,Low,RENT,False,True,DIGITAL,train
+C10414,South East,30-44,Low,FAMILY,False,True,MIXED,train
+C10415,Scotland,60+,Low,RENT,False,True,PAPER,train
+C10416,Scotland,30-44,Mid,RENT,False,True,PAPER,train
+C10417,South East,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10418,South West,60+,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10419,North West,60+,High,OWNER_MORTGAGE,True,True,PAPER,val
+C10420,Northern Ireland,18-29,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10421,Scotland,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10422,South East,45-59,Low,RENT,False,True,PAPER,train
+C10423,South East,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C10424,Northern Ireland,60+,High,OWNER_MORTGAGE,True,False,MIXED,train
+C10425,South East,30-44,Low,RENT,False,True,PAPER,train
+C10426,Wales,30-44,Mid,RENT,False,True,PAPER,train
+C10427,South West,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,val
+C10428,South East,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C10429,Yorkshire and The Humber,45-59,Low,RENT,False,True,PAPER,test
+C10430,East Midlands,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10431,South West,45-59,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10432,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10433,South West,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10434,North West,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10435,North West,60+,Mid,RENT,False,True,PAPER,train
+C10436,East of England,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10437,London,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10438,London,30-44,Mid,RENT,False,True,PAPER,train
+C10439,South West,45-59,Mid,RENT,False,True,MIXED,val
+C10440,East of England,60+,Mid,RENT,False,False,PAPER,train
+C10441,East Midlands,45-59,Mid,RENT,False,True,DIGITAL,train
+C10442,East Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10443,West Midlands,30-44,Low,RENT,False,True,DIGITAL,train
+C10444,London,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10445,East of England,18-29,Mid,RENT,False,True,DIGITAL,test
+C10446,Yorkshire and The Humber,18-29,Low,RENT,False,True,PAPER,train
+C10447,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10448,Yorkshire and The Humber,60+,Mid,RENT,False,True,PAPER,train
+C10449,North East,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10450,East of England,30-44,Low,RENT,False,True,DIGITAL,train
+C10451,South West,45-59,Mid,RENT,False,False,DIGITAL,test
+C10452,North East,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10453,East Midlands,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10454,West Midlands,45-59,Low,FAMILY,False,True,MIXED,val
+C10455,South East,30-44,Mid,RENT,False,True,DIGITAL,val
+C10456,Scotland,30-44,Mid,RENT,False,False,PAPER,train
+C10457,London,30-44,Mid,RENT,False,True,DIGITAL,train
+C10458,South East,18-29,Low,RENT,False,True,DIGITAL,train
+C10459,London,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10460,North West,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10461,Wales,30-44,Low,RENT,False,True,MIXED,train
+C10462,North East,18-29,Mid,RENT,False,True,PAPER,train
+C10463,Wales,18-29,Mid,RENT,False,True,DIGITAL,val
+C10464,Scotland,30-44,Low,RENT,False,True,MIXED,val
+C10465,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10466,West Midlands,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,val
+C10467,Yorkshire and The Humber,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10468,Scotland,30-44,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C10469,Yorkshire and The Humber,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C10470,London,60+,Low,FAMILY,False,False,PAPER,train
+C10471,East Midlands,30-44,Mid,RENT,False,False,MIXED,train
+C10472,North East,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10473,North East,60+,Mid,OWNER_OUTRIGHT,True,True,MIXED,test
+C10474,South West,30-44,Mid,RENT,False,True,MIXED,val
+C10475,East of England,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10476,East of England,30-44,Low,RENT,False,True,DIGITAL,train
+C10477,London,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,val
+C10478,South West,45-59,Low,RENT,False,False,DIGITAL,val
+C10479,Wales,30-44,High,RENT,False,True,MIXED,train
+C10480,Scotland,45-59,Mid,RENT,False,True,PAPER,train
+C10481,East Midlands,18-29,Low,RENT,False,True,DIGITAL,train
+C10482,North West,30-44,Low,OWNER_MORTGAGE,True,True,MIXED,val
+C10483,East Midlands,60+,Low,FAMILY,False,False,PAPER,train
+C10484,South West,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10485,East of England,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10486,West Midlands,45-59,High,RENT,False,True,DIGITAL,test
+C10487,South East,45-59,Low,RENT,False,False,DIGITAL,train
+C10488,London,18-29,Low,RENT,False,True,MIXED,train
+C10489,East Midlands,45-59,Mid,RENT,False,True,PAPER,train
+C10490,Scotland,60+,Low,RENT,False,True,PAPER,train
+C10491,London,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10492,Wales,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C10493,London,30-44,Mid,RENT,False,True,MIXED,train
+C10494,South West,18-29,Low,RENT,False,False,PAPER,train
+C10495,North West,18-29,Low,RENT,False,True,MIXED,val
+C10496,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10497,London,30-44,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10498,East Midlands,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10499,East Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10500,Yorkshire and The Humber,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10501,East of England,18-29,Mid,RENT,False,True,DIGITAL,train
+C10502,North East,60+,High,RENT,False,True,PAPER,val
+C10503,London,45-59,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C10504,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,train
+C10505,London,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10506,South East,60+,High,OWNER_MORTGAGE,True,False,PAPER,val
+C10507,Yorkshire and The Humber,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10508,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10509,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C10510,Scotland,30-44,Mid,RENT,False,True,MIXED,test
+C10511,Yorkshire and The Humber,30-44,Low,RENT,False,True,PAPER,test
+C10512,East Midlands,60+,Low,RENT,False,False,PAPER,test
+C10513,London,45-59,Mid,FAMILY,False,False,PAPER,test
+C10514,Wales,30-44,High,OWNER_MORTGAGE,True,True,PAPER,val
+C10515,Wales,30-44,Mid,RENT,False,True,PAPER,test
+C10516,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10517,East Midlands,18-29,Mid,RENT,False,False,PAPER,train
+C10518,East Midlands,18-29,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C10519,South East,45-59,High,RENT,False,True,DIGITAL,train
+C10520,West Midlands,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10521,South West,60+,Mid,FAMILY,False,False,MIXED,train
+C10522,South West,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10523,Scotland,30-44,Low,RENT,False,True,DIGITAL,train
+C10524,East Midlands,60+,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C10525,East of England,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10526,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10527,East of England,18-29,Low,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10528,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10529,South West,30-44,Mid,RENT,False,True,DIGITAL,train
+C10530,South West,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10531,Yorkshire and The Humber,60+,Mid,FAMILY,False,True,DIGITAL,test
+C10532,London,45-59,High,RENT,False,True,DIGITAL,train
+C10533,South East,30-44,Low,OWNER_MORTGAGE,True,False,PAPER,test
+C10534,North West,45-59,Low,RENT,False,True,DIGITAL,val
+C10535,South West,60+,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10536,Scotland,60+,Mid,RENT,False,True,PAPER,train
+C10537,East of England,18-29,High,FAMILY,False,True,DIGITAL,train
+C10538,South East,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10539,North West,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10540,South East,30-44,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C10541,South East,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10542,West Midlands,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10543,East of England,60+,Mid,RENT,False,True,PAPER,test
+C10544,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C10545,Northern Ireland,45-59,Low,RENT,False,False,PAPER,val
+C10546,East Midlands,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10547,Scotland,18-29,Mid,OWNER_MORTGAGE,True,False,MIXED,train
+C10548,Scotland,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10549,South East,30-44,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10550,South West,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10551,West Midlands,60+,Mid,RENT,False,True,PAPER,val
+C10552,Yorkshire and The Humber,60+,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10553,South West,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10554,East of England,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C10555,Wales,60+,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C10556,West Midlands,30-44,Mid,RENT,False,True,PAPER,val
+C10557,London,30-44,Low,RENT,False,True,MIXED,train
+C10558,North West,18-29,Mid,RENT,False,True,MIXED,train
+C10559,South West,18-29,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10560,Wales,30-44,Mid,RENT,False,True,PAPER,test
+C10561,London,45-59,Low,RENT,False,True,MIXED,train
+C10562,East of England,18-29,Low,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10563,North West,18-29,High,RENT,False,True,DIGITAL,train
+C10564,North West,60+,Low,FAMILY,False,True,PAPER,test
+C10565,Wales,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10566,Yorkshire and The Humber,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,val
+C10567,East of England,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10568,South West,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10569,South West,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,test
+C10570,Yorkshire and The Humber,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10571,London,60+,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10572,South West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10573,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10574,London,30-44,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C10575,East Midlands,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C10576,Wales,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10577,South East,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10578,London,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10579,London,18-29,Mid,RENT,False,True,DIGITAL,test
+C10580,North West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10581,North West,18-29,Low,RENT,False,False,MIXED,val
+C10582,Yorkshire and The Humber,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10583,South West,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10584,Yorkshire and The Humber,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10585,East of England,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C10586,North West,18-29,Mid,RENT,False,True,MIXED,train
+C10587,North East,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10588,Scotland,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10589,East of England,30-44,Low,RENT,False,True,PAPER,train
+C10590,West Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10591,South West,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C10592,Scotland,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10593,London,45-59,High,RENT,False,True,DIGITAL,test
+C10594,North West,60+,Mid,FAMILY,False,True,MIXED,val
+C10595,South East,18-29,Mid,RENT,False,True,DIGITAL,train
+C10596,East of England,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10597,East of England,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C10598,North West,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10599,East of England,18-29,Low,RENT,False,True,MIXED,train
+C10600,London,30-44,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C10601,Scotland,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10602,North East,30-44,Low,RENT,False,True,DIGITAL,train
+C10603,Northern Ireland,45-59,High,RENT,False,False,PAPER,train
+C10604,South West,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10605,Wales,60+,High,RENT,False,True,DIGITAL,train
+C10606,East Midlands,18-29,Low,FAMILY,False,True,PAPER,val
+C10607,South West,45-59,Mid,RENT,False,True,DIGITAL,train
+C10608,London,18-29,Low,RENT,False,True,DIGITAL,train
+C10609,London,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C10610,South West,30-44,Low,FAMILY,False,True,MIXED,train
+C10611,North West,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10612,Northern Ireland,30-44,Low,RENT,False,False,PAPER,train
+C10613,South West,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10614,North West,60+,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10615,London,60+,Mid,RENT,False,False,PAPER,test
+C10616,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10617,Wales,60+,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10618,East Midlands,30-44,Low,FAMILY,False,True,PAPER,train
+C10619,South West,60+,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10620,London,30-44,Low,RENT,False,False,DIGITAL,train
+C10621,Yorkshire and The Humber,30-44,Low,RENT,False,True,MIXED,val
+C10622,Northern Ireland,30-44,Low,RENT,False,False,DIGITAL,test
+C10623,East of England,30-44,Low,RENT,False,True,DIGITAL,train
+C10624,London,30-44,Low,RENT,False,True,DIGITAL,train
+C10625,South East,45-59,Mid,FAMILY,False,True,MIXED,val
+C10626,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10627,South West,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10628,East of England,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10629,South East,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10630,East Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C10631,London,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C10632,South East,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10633,East Midlands,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10634,North East,60+,Low,FAMILY,False,True,PAPER,train
+C10635,East of England,30-44,Mid,RENT,False,True,DIGITAL,train
+C10636,South East,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10637,Yorkshire and The Humber,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C10638,East Midlands,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10639,London,60+,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10640,East Midlands,30-44,High,RENT,False,False,MIXED,train
+C10641,Wales,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10642,West Midlands,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10643,London,18-29,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10644,London,30-44,Low,RENT,False,True,MIXED,train
+C10645,Yorkshire and The Humber,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10646,North West,30-44,Mid,RENT,False,True,PAPER,train
+C10647,South East,60+,Low,RENT,False,True,PAPER,test
+C10648,South West,45-59,Mid,FAMILY,False,True,MIXED,train
+C10649,London,30-44,Mid,RENT,False,True,DIGITAL,train
+C10650,London,30-44,Mid,RENT,False,True,DIGITAL,train
+C10651,South West,60+,Mid,RENT,False,True,PAPER,train
+C10652,South East,30-44,Mid,RENT,False,True,PAPER,train
+C10653,South West,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10654,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,val
+C10655,North West,60+,Low,RENT,False,True,PAPER,val
+C10656,East of England,30-44,Mid,RENT,False,True,MIXED,train
+C10657,Scotland,45-59,Mid,RENT,False,True,DIGITAL,train
+C10658,Yorkshire and The Humber,60+,Low,FAMILY,False,True,PAPER,train
+C10659,South East,60+,Low,RENT,False,False,DIGITAL,val
+C10660,Yorkshire and The Humber,60+,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10661,London,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10662,North West,18-29,Mid,RENT,False,True,PAPER,train
+C10663,South East,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C10664,West Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10665,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10666,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10667,East Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10668,South East,30-44,Low,RENT,False,True,PAPER,val
+C10669,South East,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10670,London,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10671,Wales,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10672,South East,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10673,London,30-44,High,FAMILY,False,True,PAPER,train
+C10674,London,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C10675,South East,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10676,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10677,South East,18-29,Mid,RENT,False,True,MIXED,test
+C10678,London,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10679,South East,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10680,Scotland,30-44,Low,FAMILY,False,False,DIGITAL,train
+C10681,South West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10682,North West,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10683,South West,30-44,Low,RENT,False,True,PAPER,test
+C10684,West Midlands,45-59,High,RENT,False,True,PAPER,train
+C10685,West Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10686,South East,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10687,Northern Ireland,45-59,High,OWNER_MORTGAGE,True,False,DIGITAL,test
+C10688,London,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10689,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10690,East of England,60+,Mid,FAMILY,False,True,DIGITAL,train
+C10691,South West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10692,Scotland,18-29,Low,OWNER_OUTRIGHT,True,False,DIGITAL,test
+C10693,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10694,East Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10695,London,60+,Low,RENT,False,True,DIGITAL,train
+C10696,Northern Ireland,18-29,Low,OWNER_OUTRIGHT,True,False,MIXED,val
+C10697,Wales,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10698,South East,30-44,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10699,London,45-59,Mid,RENT,False,True,PAPER,train
+C10700,South East,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10701,Northern Ireland,60+,Mid,RENT,False,False,PAPER,train
+C10702,London,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10703,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10704,London,30-44,Low,FAMILY,False,True,DIGITAL,val
+C10705,Northern Ireland,30-44,High,OWNER_MORTGAGE,True,True,MIXED,val
+C10706,North West,18-29,Mid,RENT,False,True,PAPER,train
+C10707,East of England,30-44,Low,FAMILY,False,True,PAPER,train
+C10708,Wales,18-29,Mid,RENT,False,True,MIXED,train
+C10709,East of England,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C10710,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10711,South East,45-59,High,RENT,False,True,PAPER,train
+C10712,North West,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10713,North West,18-29,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10714,West Midlands,60+,Low,RENT,False,True,PAPER,train
+C10715,South West,18-29,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C10716,South East,18-29,High,RENT,False,True,DIGITAL,train
+C10717,South West,45-59,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10718,West Midlands,60+,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C10719,Scotland,45-59,Mid,RENT,False,True,DIGITAL,train
+C10720,South East,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C10721,North West,18-29,Low,FAMILY,False,True,DIGITAL,train
+C10722,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10723,South West,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10724,South West,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10725,East of England,30-44,Mid,RENT,False,True,PAPER,train
+C10726,East of England,45-59,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C10727,London,30-44,Low,RENT,False,True,PAPER,train
+C10728,East of England,45-59,Low,RENT,False,True,DIGITAL,test
+C10729,South East,18-29,Mid,RENT,False,True,DIGITAL,val
+C10730,North West,60+,Mid,RENT,False,True,PAPER,test
+C10731,North West,60+,Mid,RENT,False,True,PAPER,test
+C10732,Scotland,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10733,London,45-59,High,OWNER_MORTGAGE,True,False,PAPER,train
+C10734,Wales,45-59,High,OWNER_MORTGAGE,True,True,PAPER,val
+C10735,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C10736,Northern Ireland,18-29,Mid,RENT,False,False,PAPER,train
+C10737,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10738,East Midlands,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C10739,East Midlands,30-44,Low,RENT,False,True,PAPER,train
+C10740,South West,30-44,Low,RENT,False,True,MIXED,train
+C10741,East Midlands,60+,Mid,RENT,False,True,MIXED,train
+C10742,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10743,East Midlands,45-59,High,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10744,South East,45-59,Low,RENT,False,True,PAPER,train
+C10745,East of England,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10746,London,45-59,Low,RENT,False,True,DIGITAL,val
+C10747,East Midlands,18-29,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10748,South West,30-44,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10749,East Midlands,18-29,Mid,RENT,False,True,PAPER,train
+C10750,London,18-29,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10751,North West,60+,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10752,North West,18-29,Low,FAMILY,False,True,PAPER,train
+C10753,North West,45-59,Low,FAMILY,False,False,DIGITAL,train
+C10754,East of England,60+,Mid,RENT,False,True,PAPER,train
+C10755,South East,30-44,Low,RENT,False,True,DIGITAL,val
+C10756,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10757,London,45-59,Low,OWNER_OUTRIGHT,True,True,PAPER,test
+C10758,North West,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10759,South West,60+,Low,RENT,False,True,PAPER,test
+C10760,East of England,60+,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10761,North East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10762,Scotland,30-44,Mid,RENT,False,True,PAPER,train
+C10763,West Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C10764,London,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10765,South East,18-29,Low,RENT,False,True,DIGITAL,train
+C10766,London,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10767,London,30-44,Low,FAMILY,False,True,MIXED,train
+C10768,Scotland,18-29,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10769,South West,45-59,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,test
+C10770,North West,30-44,Low,RENT,False,True,PAPER,train
+C10771,North West,18-29,Mid,RENT,False,True,MIXED,train
+C10772,East Midlands,18-29,Low,RENT,False,True,DIGITAL,train
+C10773,West Midlands,18-29,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10774,South West,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C10775,London,60+,High,OWNER_OUTRIGHT,True,True,PAPER,val
+C10776,Wales,18-29,Low,RENT,False,True,PAPER,train
+C10777,South West,45-59,Mid,RENT,False,True,PAPER,train
+C10778,South East,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10779,East of England,18-29,High,RENT,False,True,DIGITAL,val
+C10780,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10781,West Midlands,60+,Mid,RENT,False,True,DIGITAL,train
+C10782,London,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10783,Northern Ireland,45-59,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10784,South East,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10785,Wales,18-29,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10786,London,30-44,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C10787,East Midlands,45-59,Mid,FAMILY,False,True,PAPER,val
+C10788,Scotland,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C10789,Northern Ireland,60+,High,RENT,False,True,PAPER,train
+C10790,Scotland,60+,Mid,RENT,False,True,MIXED,train
+C10791,London,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10792,East of England,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10793,West Midlands,30-44,Low,RENT,False,True,MIXED,train
+C10794,South East,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10795,West Midlands,45-59,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C10796,East of England,30-44,Low,RENT,False,True,PAPER,train
+C10797,North West,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10798,East of England,30-44,Low,RENT,False,True,MIXED,test
+C10799,London,60+,Mid,RENT,False,True,PAPER,train
+C10800,South West,30-44,High,RENT,False,True,DIGITAL,test
+C10801,West Midlands,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C10802,Northern Ireland,45-59,Low,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C10803,Yorkshire and The Humber,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10804,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10805,West Midlands,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10806,South West,45-59,Low,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10807,London,18-29,Low,RENT,False,True,DIGITAL,train
+C10808,South West,45-59,High,OWNER_MORTGAGE,True,True,PAPER,val
+C10809,Northern Ireland,30-44,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10810,South East,30-44,Mid,FAMILY,False,False,PAPER,train
+C10811,South East,45-59,Low,RENT,False,False,PAPER,train
+C10812,Northern Ireland,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10813,West Midlands,60+,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10814,London,30-44,Low,RENT,False,True,MIXED,test
+C10815,Scotland,30-44,Mid,RENT,False,True,DIGITAL,val
+C10816,East Midlands,30-44,Low,FAMILY,False,True,DIGITAL,train
+C10817,Scotland,18-29,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10818,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10819,South West,45-59,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10820,East of England,45-59,Low,OWNER_MORTGAGE,True,False,MIXED,train
+C10821,London,18-29,Low,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C10822,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10823,South West,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C10824,London,30-44,Mid,RENT,False,True,MIXED,train
+C10825,South East,30-44,Mid,FAMILY,False,True,PAPER,train
+C10826,South East,45-59,Low,RENT,False,False,PAPER,test
+C10827,East of England,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10828,South East,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10829,West Midlands,30-44,Mid,FAMILY,False,True,DIGITAL,val
+C10830,East Midlands,30-44,Low,RENT,False,True,MIXED,train
+C10831,London,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10832,North West,45-59,Low,RENT,False,True,DIGITAL,train
+C10833,North West,30-44,Mid,FAMILY,False,True,MIXED,test
+C10834,East Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10835,London,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10836,East Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C10837,East of England,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10838,North West,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10839,Yorkshire and The Humber,60+,Low,FAMILY,False,False,PAPER,train
+C10840,North West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10841,London,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10842,West Midlands,60+,Low,RENT,False,False,PAPER,train
+C10843,North West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C10844,London,18-29,Low,RENT,False,True,DIGITAL,train
+C10845,London,30-44,Mid,FAMILY,False,True,PAPER,train
+C10846,Northern Ireland,60+,Low,OWNER_MORTGAGE,True,False,PAPER,test
+C10847,South East,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C10848,North West,30-44,Mid,RENT,False,True,DIGITAL,train
+C10849,Scotland,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10850,Scotland,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10851,West Midlands,60+,Low,FAMILY,False,True,DIGITAL,train
+C10852,North West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10853,South East,30-44,Low,RENT,False,True,PAPER,test
+C10854,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10855,East Midlands,45-59,Mid,RENT,False,True,PAPER,train
+C10856,East Midlands,60+,Mid,FAMILY,False,True,DIGITAL,train
+C10857,South East,45-59,Low,RENT,False,True,DIGITAL,train
+C10858,South East,60+,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C10859,London,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10860,North West,30-44,Low,RENT,False,True,PAPER,train
+C10861,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C10862,North East,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10863,North West,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,test
+C10864,London,60+,Mid,RENT,False,True,PAPER,test
+C10865,London,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10866,South West,30-44,Mid,RENT,False,True,PAPER,train
+C10867,Scotland,45-59,Low,RENT,False,True,PAPER,test
+C10868,London,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10869,London,60+,Mid,RENT,False,False,MIXED,train
+C10870,North West,45-59,Mid,RENT,False,True,DIGITAL,test
+C10871,London,18-29,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10872,Yorkshire and The Humber,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10873,West Midlands,30-44,High,RENT,False,False,PAPER,val
+C10874,South East,60+,Low,FAMILY,False,True,DIGITAL,train
+C10875,West Midlands,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C10876,North West,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10877,South West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C10878,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,False,PAPER,val
+C10879,South East,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10880,West Midlands,60+,High,RENT,False,True,DIGITAL,train
+C10881,North West,60+,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10882,London,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10883,South East,30-44,Low,RENT,False,True,PAPER,train
+C10884,East Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10885,Yorkshire and The Humber,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,val
+C10886,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10887,East Midlands,30-44,Low,RENT,False,True,MIXED,train
+C10888,Scotland,60+,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10889,East of England,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10890,London,45-59,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C10891,North West,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10892,London,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10893,East Midlands,30-44,Low,RENT,False,True,PAPER,train
+C10894,Northern Ireland,45-59,Mid,FAMILY,False,False,PAPER,train
+C10895,East of England,18-29,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10896,West Midlands,60+,Low,RENT,False,True,PAPER,val
+C10897,North West,18-29,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10898,South West,30-44,Low,RENT,False,False,MIXED,test
+C10899,North East,30-44,Mid,RENT,False,True,MIXED,train
+C10900,West Midlands,45-59,Mid,RENT,False,True,DIGITAL,train
+C10901,North West,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10902,West Midlands,30-44,Mid,RENT,False,True,PAPER,test
+C10903,Yorkshire and The Humber,45-59,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10904,East Midlands,18-29,Mid,RENT,False,True,PAPER,train
+C10905,South East,45-59,Low,RENT,False,True,PAPER,val
+C10906,London,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,test
+C10907,North East,45-59,Mid,RENT,False,True,PAPER,train
+C10908,South East,60+,Mid,RENT,False,True,PAPER,train
+C10909,London,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10910,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C10911,East of England,60+,Mid,RENT,False,True,PAPER,train
+C10912,North East,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C10913,London,45-59,Low,RENT,False,True,PAPER,test
+C10914,South West,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,test
+C10915,East of England,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10916,South West,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10917,North West,45-59,Mid,RENT,False,True,PAPER,train
+C10918,South East,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10919,South East,18-29,High,RENT,False,False,DIGITAL,train
+C10920,South East,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C10921,Scotland,60+,High,OWNER_OUTRIGHT,True,False,PAPER,train
+C10922,North West,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,val
+C10923,South West,18-29,Low,RENT,False,True,PAPER,train
+C10924,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10925,East Midlands,60+,Low,FAMILY,False,True,PAPER,val
+C10926,Scotland,18-29,Low,RENT,False,False,DIGITAL,val
+C10927,East Midlands,60+,Low,OWNER_MORTGAGE,True,True,PAPER,test
+C10928,Northern Ireland,30-44,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C10929,West Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10930,Northern Ireland,60+,High,RENT,False,False,PAPER,train
+C10931,North West,30-44,Mid,FAMILY,False,False,PAPER,train
+C10932,East Midlands,30-44,Low,RENT,False,True,PAPER,train
+C10933,South East,18-29,High,RENT,False,True,DIGITAL,train
+C10934,South West,30-44,Mid,FAMILY,False,True,PAPER,train
+C10935,South West,30-44,Mid,RENT,False,False,PAPER,train
+C10936,Scotland,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10937,South East,30-44,Mid,RENT,False,True,DIGITAL,train
+C10938,Scotland,45-59,High,RENT,False,True,PAPER,val
+C10939,South West,18-29,Low,RENT,False,True,PAPER,val
+C10940,North West,30-44,Low,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C10941,South East,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10942,South East,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C10943,North East,18-29,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10944,East Midlands,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10945,North West,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C10946,West Midlands,30-44,Mid,RENT,False,True,PAPER,train
+C10947,West Midlands,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,test
+C10948,East Midlands,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,test
+C10949,North West,30-44,Mid,RENT,False,True,DIGITAL,val
+C10950,South West,45-59,Low,RENT,False,True,PAPER,train
+C10951,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C10952,South West,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10953,Yorkshire and The Humber,18-29,Mid,RENT,False,False,DIGITAL,train
+C10954,North West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10955,South East,45-59,Mid,FAMILY,False,True,PAPER,test
+C10956,South East,30-44,High,OWNER_MORTGAGE,True,True,PAPER,test
+C10957,Wales,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10958,West Midlands,30-44,Low,RENT,False,True,DIGITAL,train
+C10959,London,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C10960,North West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C10961,North West,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10962,East of England,60+,Mid,OWNER_OUTRIGHT,True,False,MIXED,val
+C10963,Scotland,45-59,Low,RENT,False,True,DIGITAL,train
+C10964,Scotland,60+,High,OWNER_MORTGAGE,True,False,PAPER,train
+C10965,London,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C10966,East of England,45-59,Low,OWNER_OUTRIGHT,True,False,PAPER,train
+C10967,Yorkshire and The Humber,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10968,Wales,60+,Low,RENT,False,True,DIGITAL,train
+C10969,North East,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C10970,London,30-44,Low,FAMILY,False,True,PAPER,train
+C10971,East of England,60+,High,FAMILY,False,True,DIGITAL,train
+C10972,East Midlands,30-44,Mid,RENT,False,True,PAPER,train
+C10973,East of England,45-59,Mid,RENT,False,False,DIGITAL,train
+C10974,South West,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C10975,East of England,30-44,High,FAMILY,False,True,DIGITAL,train
+C10976,Wales,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C10977,South East,18-29,High,OWNER_MORTGAGE,True,True,MIXED,train
+C10978,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C10979,West Midlands,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C10980,North West,30-44,Low,FAMILY,False,True,PAPER,train
+C10981,South East,30-44,Mid,RENT,False,True,DIGITAL,val
+C10982,West Midlands,30-44,High,RENT,False,True,DIGITAL,val
+C10983,Scotland,18-29,High,RENT,False,True,DIGITAL,val
+C10984,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C10985,Scotland,45-59,Mid,RENT,False,True,DIGITAL,train
+C10986,East Midlands,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C10987,East of England,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C10988,South West,18-29,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C10989,North East,30-44,Mid,RENT,False,True,DIGITAL,train
+C10990,Wales,30-44,Low,OWNER_MORTGAGE,True,True,MIXED,test
+C10991,East of England,30-44,Mid,RENT,False,True,DIGITAL,test
+C10992,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C10993,London,60+,Low,RENT,False,True,PAPER,train
+C10994,East of England,45-59,Mid,RENT,False,True,PAPER,train
+C10995,Yorkshire and The Humber,18-29,Mid,FAMILY,False,False,DIGITAL,train
+C10996,London,60+,Low,RENT,False,True,PAPER,train
+C10997,North West,60+,Low,OWNER_MORTGAGE,True,True,MIXED,test
+C10998,South East,18-29,Mid,RENT,False,True,DIGITAL,train
+C10999,South West,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11000,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11001,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11002,Yorkshire and The Humber,30-44,Mid,RENT,False,False,MIXED,train
+C11003,Yorkshire and The Humber,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11004,South East,18-29,Low,OWNER_OUTRIGHT,True,False,MIXED,train
+C11005,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,False,MIXED,val
+C11006,East Midlands,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11007,London,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11008,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11009,South East,45-59,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C11010,East Midlands,18-29,Mid,RENT,False,True,DIGITAL,val
+C11011,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C11012,East of England,60+,Low,RENT,False,True,PAPER,val
+C11013,North West,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11014,East Midlands,30-44,High,RENT,False,True,MIXED,train
+C11015,Yorkshire and The Humber,30-44,Low,FAMILY,False,True,PAPER,train
+C11016,North West,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11017,East of England,45-59,High,RENT,False,True,PAPER,val
+C11018,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11019,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11020,London,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11021,East of England,18-29,Low,RENT,False,True,DIGITAL,test
+C11022,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11023,North West,45-59,Low,RENT,False,True,DIGITAL,train
+C11024,South East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11025,South East,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11026,Wales,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11027,Northern Ireland,30-44,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,test
+C11028,East Midlands,18-29,Mid,RENT,False,True,MIXED,val
+C11029,East of England,18-29,Mid,RENT,False,False,MIXED,train
+C11030,Scotland,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11031,Wales,45-59,Mid,RENT,False,False,DIGITAL,val
+C11032,East Midlands,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11033,Northern Ireland,18-29,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11034,North East,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11035,Scotland,30-44,Mid,FAMILY,False,True,PAPER,train
+C11036,West Midlands,30-44,High,OWNER_MORTGAGE,True,False,DIGITAL,val
+C11037,East of England,60+,Mid,RENT,False,True,PAPER,train
+C11038,East of England,45-59,Mid,RENT,False,True,DIGITAL,train
+C11039,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11040,Scotland,60+,High,RENT,False,True,DIGITAL,train
+C11041,South West,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11042,East of England,60+,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11043,East Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11044,East Midlands,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11045,North West,45-59,High,FAMILY,False,False,DIGITAL,train
+C11046,South West,18-29,Mid,RENT,False,True,DIGITAL,test
+C11047,Scotland,18-29,Low,RENT,False,True,DIGITAL,train
+C11048,South West,30-44,Low,RENT,False,True,PAPER,train
+C11049,East of England,60+,Mid,FAMILY,False,True,PAPER,val
+C11050,East Midlands,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11051,North West,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11052,Scotland,18-29,Mid,RENT,False,True,PAPER,train
+C11053,East of England,45-59,Mid,RENT,False,True,PAPER,train
+C11054,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11055,Scotland,60+,High,RENT,False,True,DIGITAL,test
+C11056,Scotland,45-59,Mid,RENT,False,True,DIGITAL,train
+C11057,East of England,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11058,East of England,45-59,Low,RENT,False,True,PAPER,train
+C11059,West Midlands,18-29,Mid,RENT,False,True,DIGITAL,train
+C11060,Wales,18-29,Mid,RENT,False,True,PAPER,train
+C11061,North West,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11062,East of England,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11063,South East,18-29,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11064,South East,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11065,West Midlands,60+,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11066,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11067,South East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11068,London,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11069,West Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11070,North West,30-44,Low,FAMILY,False,True,DIGITAL,test
+C11071,London,30-44,Low,RENT,False,True,DIGITAL,train
+C11072,East Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11073,North West,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,test
+C11074,East of England,45-59,Low,RENT,False,False,DIGITAL,test
+C11075,London,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,val
+C11076,North East,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11077,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11078,London,45-59,Low,RENT,False,True,PAPER,test
+C11079,East of England,18-29,Mid,FAMILY,False,True,MIXED,train
+C11080,North East,45-59,High,RENT,False,True,PAPER,train
+C11081,North East,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11082,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11083,Scotland,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11084,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11085,Wales,45-59,Low,FAMILY,False,False,PAPER,train
+C11086,North West,30-44,Mid,RENT,False,True,PAPER,train
+C11087,London,45-59,Mid,RENT,False,True,PAPER,train
+C11088,East Midlands,60+,Mid,FAMILY,False,True,PAPER,test
+C11089,Wales,60+,Mid,RENT,False,True,DIGITAL,train
+C11090,North East,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11091,London,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11092,London,18-29,High,RENT,False,True,MIXED,val
+C11093,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11094,Wales,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11095,East of England,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11096,London,45-59,Low,RENT,False,True,DIGITAL,train
+C11097,London,18-29,Mid,RENT,False,True,DIGITAL,train
+C11098,South West,60+,High,OWNER_MORTGAGE,True,False,MIXED,train
+C11099,North West,18-29,Mid,RENT,False,True,PAPER,train
+C11100,South East,30-44,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C11101,South East,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11102,North West,18-29,Mid,RENT,False,True,DIGITAL,train
+C11103,South West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11104,Yorkshire and The Humber,60+,Mid,RENT,False,True,DIGITAL,train
+C11105,South West,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11106,East of England,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11107,Yorkshire and The Humber,30-44,Low,RENT,False,True,PAPER,val
+C11108,North West,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11109,London,30-44,Low,RENT,False,False,DIGITAL,train
+C11110,Yorkshire and The Humber,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C11111,London,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11112,Northern Ireland,45-59,Low,RENT,False,False,PAPER,train
+C11113,South East,30-44,Mid,RENT,False,True,DIGITAL,train
+C11114,Wales,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11115,South East,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11116,North West,60+,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C11117,Yorkshire and The Humber,18-29,Low,OWNER_MORTGAGE,True,False,DIGITAL,test
+C11118,South East,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11119,Scotland,45-59,High,OWNER_MORTGAGE,True,True,MIXED,val
+C11120,Scotland,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11121,Northern Ireland,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11122,North West,18-29,Mid,RENT,False,True,MIXED,train
+C11123,East Midlands,18-29,Mid,FAMILY,False,True,PAPER,train
+C11124,North West,30-44,Mid,RENT,False,True,MIXED,val
+C11125,London,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11126,Scotland,18-29,Mid,RENT,False,False,DIGITAL,test
+C11127,London,45-59,Low,FAMILY,False,True,PAPER,train
+C11128,East of England,18-29,Mid,RENT,False,True,MIXED,train
+C11129,Yorkshire and The Humber,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11130,West Midlands,30-44,Low,RENT,False,True,DIGITAL,train
+C11131,South East,60+,Low,RENT,False,True,PAPER,train
+C11132,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11133,South East,30-44,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C11134,North East,18-29,High,RENT,False,True,DIGITAL,train
+C11135,East Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11136,London,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11137,Wales,60+,Low,RENT,False,True,MIXED,test
+C11138,West Midlands,18-29,Low,RENT,False,False,DIGITAL,train
+C11139,Yorkshire and The Humber,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11140,West Midlands,30-44,Low,FAMILY,False,True,PAPER,train
+C11141,East of England,30-44,Low,RENT,False,True,PAPER,train
+C11142,North East,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11143,South East,30-44,Mid,RENT,False,True,PAPER,val
+C11144,South West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11145,East Midlands,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11146,South East,45-59,Low,RENT,False,True,MIXED,test
+C11147,Yorkshire and The Humber,18-29,Mid,RENT,False,True,PAPER,val
+C11148,South West,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11149,South East,45-59,High,FAMILY,False,False,DIGITAL,train
+C11150,South East,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11151,South East,30-44,High,RENT,False,True,DIGITAL,train
+C11152,East Midlands,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11153,South East,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C11154,North East,30-44,Low,RENT,False,True,DIGITAL,train
+C11155,West Midlands,60+,Mid,RENT,False,True,PAPER,train
+C11156,South West,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11157,London,60+,Mid,RENT,False,True,DIGITAL,train
+C11158,East Midlands,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11159,London,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11160,North East,45-59,Low,RENT,False,True,DIGITAL,train
+C11161,London,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11162,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11163,Northern Ireland,30-44,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11164,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11165,North West,30-44,Low,RENT,False,True,DIGITAL,train
+C11166,South East,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11167,London,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11168,West Midlands,18-29,Mid,RENT,False,True,DIGITAL,train
+C11169,East of England,45-59,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11170,South West,30-44,High,RENT,False,False,PAPER,train
+C11171,South West,30-44,Mid,RENT,False,True,DIGITAL,train
+C11172,North East,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11173,Yorkshire and The Humber,18-29,Mid,FAMILY,False,True,PAPER,train
+C11174,London,30-44,Low,RENT,False,True,MIXED,train
+C11175,Scotland,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11176,North West,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11177,South East,30-44,Low,RENT,False,True,PAPER,val
+C11178,North West,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11179,East Midlands,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11180,West Midlands,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11181,East Midlands,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11182,West Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11183,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,train
+C11184,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11185,Scotland,60+,Mid,RENT,False,True,PAPER,train
+C11186,Wales,45-59,Mid,RENT,False,True,DIGITAL,train
+C11187,Yorkshire and The Humber,18-29,Low,FAMILY,False,True,PAPER,val
+C11188,Yorkshire and The Humber,18-29,Low,FAMILY,False,True,DIGITAL,train
+C11189,South East,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11190,Yorkshire and The Humber,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,val
+C11191,South West,30-44,Low,RENT,False,True,DIGITAL,test
+C11192,London,45-59,Low,RENT,False,True,PAPER,train
+C11193,South West,60+,Mid,RENT,False,True,DIGITAL,train
+C11194,London,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11195,Wales,60+,High,OWNER_MORTGAGE,True,False,PAPER,train
+C11196,Scotland,30-44,Low,FAMILY,False,True,DIGITAL,train
+C11197,North West,18-29,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11198,South West,30-44,Low,RENT,False,False,DIGITAL,train
+C11199,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11200,West Midlands,45-59,High,RENT,False,True,DIGITAL,val
+C11201,London,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11202,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11203,Yorkshire and The Humber,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11204,South East,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11205,London,18-29,Mid,RENT,False,True,PAPER,train
+C11206,South East,30-44,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11207,North East,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11208,North West,18-29,Mid,RENT,False,False,PAPER,train
+C11209,South East,30-44,Mid,RENT,False,True,PAPER,train
+C11210,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11211,London,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11212,North East,18-29,Mid,RENT,False,True,DIGITAL,train
+C11213,North East,30-44,Low,OWNER_MORTGAGE,True,True,MIXED,val
+C11214,North West,30-44,High,RENT,False,True,MIXED,train
+C11215,Northern Ireland,18-29,Low,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11216,Wales,60+,Mid,RENT,False,True,PAPER,train
+C11217,North West,60+,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C11218,North West,18-29,Low,RENT,False,True,DIGITAL,train
+C11219,London,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11220,East of England,30-44,High,OWNER_OUTRIGHT,True,True,MIXED,test
+C11221,London,45-59,Low,OWNER_MORTGAGE,True,False,DIGITAL,test
+C11222,Scotland,18-29,Mid,RENT,False,True,DIGITAL,train
+C11223,South East,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11224,South West,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11225,West Midlands,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C11226,London,30-44,High,RENT,False,True,DIGITAL,train
+C11227,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11228,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11229,Yorkshire and The Humber,30-44,Low,FAMILY,False,True,DIGITAL,train
+C11230,London,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11231,South East,45-59,Low,RENT,False,True,PAPER,train
+C11232,North West,30-44,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11233,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11234,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,val
+C11235,East Midlands,60+,High,OWNER_MORTGAGE,True,True,PAPER,val
+C11236,Yorkshire and The Humber,18-29,Mid,RENT,False,True,PAPER,train
+C11237,South East,60+,Mid,RENT,False,True,PAPER,val
+C11238,London,45-59,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11239,Scotland,45-59,Mid,RENT,False,True,PAPER,train
+C11240,South East,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11241,East of England,18-29,Low,RENT,False,True,DIGITAL,train
+C11242,South East,18-29,Low,RENT,False,True,MIXED,train
+C11243,Scotland,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11244,London,18-29,Mid,RENT,False,True,PAPER,train
+C11245,South West,60+,High,RENT,False,True,MIXED,test
+C11246,East of England,30-44,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11247,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11248,South East,18-29,High,OWNER_OUTRIGHT,True,True,MIXED,test
+C11249,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,train
+C11250,West Midlands,45-59,High,FAMILY,False,True,MIXED,val
+C11251,East of England,60+,Low,RENT,False,True,DIGITAL,train
+C11252,North East,60+,Low,FAMILY,False,True,PAPER,train
+C11253,London,30-44,Mid,RENT,False,True,DIGITAL,test
+C11254,South East,60+,Low,RENT,False,True,PAPER,test
+C11255,South West,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11256,Scotland,30-44,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C11257,South East,18-29,High,FAMILY,False,True,PAPER,test
+C11258,South East,30-44,Mid,FAMILY,False,True,PAPER,train
+C11259,South West,30-44,High,RENT,False,True,MIXED,train
+C11260,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11261,East of England,45-59,High,RENT,False,True,DIGITAL,val
+C11262,East Midlands,30-44,High,FAMILY,False,True,PAPER,train
+C11263,North West,30-44,Low,RENT,False,True,DIGITAL,test
+C11264,Northern Ireland,30-44,Mid,FAMILY,False,False,DIGITAL,test
+C11265,North West,45-59,Low,RENT,False,True,PAPER,train
+C11266,West Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11267,London,18-29,Mid,OWNER_MORTGAGE,True,False,DIGITAL,test
+C11268,Northern Ireland,45-59,Low,RENT,False,False,DIGITAL,val
+C11269,South East,30-44,Mid,RENT,False,True,DIGITAL,train
+C11270,West Midlands,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11271,South West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11272,North West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11273,North West,60+,High,RENT,False,True,MIXED,train
+C11274,London,60+,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11275,Yorkshire and The Humber,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,val
+C11276,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11277,East of England,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C11278,South West,30-44,Low,RENT,False,True,PAPER,train
+C11279,North East,45-59,Mid,FAMILY,False,True,DIGITAL,train
+C11280,North West,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11281,Yorkshire and The Humber,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11282,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11283,Wales,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11284,North East,60+,Low,RENT,False,True,PAPER,train
+C11285,London,45-59,Mid,RENT,False,True,PAPER,val
+C11286,South East,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11287,West Midlands,30-44,Low,RENT,False,True,MIXED,test
+C11288,London,30-44,Mid,OWNER_MORTGAGE,True,False,MIXED,train
+C11289,South West,30-44,Low,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11290,North East,30-44,Mid,RENT,False,True,DIGITAL,test
+C11291,North West,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C11292,Scotland,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11293,South West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11294,London,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,val
+C11295,West Midlands,60+,Low,RENT,False,True,PAPER,test
+C11296,North West,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11297,South East,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11298,Scotland,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11299,Scotland,18-29,Mid,RENT,False,True,DIGITAL,train
+C11300,South East,30-44,Mid,RENT,False,True,DIGITAL,train
+C11301,Yorkshire and The Humber,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11302,Wales,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11303,West Midlands,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,test
+C11304,Scotland,30-44,Low,FAMILY,False,True,DIGITAL,val
+C11305,Yorkshire and The Humber,60+,Low,RENT,False,True,DIGITAL,train
+C11306,London,60+,Mid,RENT,False,True,PAPER,train
+C11307,West Midlands,45-59,Low,RENT,False,True,PAPER,val
+C11308,North East,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11309,London,30-44,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11310,North West,30-44,Mid,RENT,False,True,PAPER,train
+C11311,North West,45-59,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11312,South East,30-44,Mid,RENT,False,True,PAPER,train
+C11313,Northern Ireland,30-44,Low,OWNER_OUTRIGHT,True,False,PAPER,test
+C11314,South East,18-29,Mid,RENT,False,False,PAPER,val
+C11315,East of England,30-44,Low,RENT,False,True,PAPER,train
+C11316,East of England,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11317,East of England,30-44,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11318,London,30-44,Low,RENT,False,False,PAPER,train
+C11319,North West,30-44,Low,RENT,False,True,MIXED,train
+C11320,South West,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11321,South East,30-44,Mid,FAMILY,False,True,PAPER,val
+C11322,London,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11323,East of England,45-59,Mid,RENT,False,True,DIGITAL,train
+C11324,Scotland,18-29,Mid,RENT,False,True,PAPER,val
+C11325,London,30-44,Low,FAMILY,False,True,PAPER,train
+C11326,South East,30-44,High,OWNER_MORTGAGE,True,True,PAPER,test
+C11327,East of England,18-29,Mid,FAMILY,False,False,DIGITAL,train
+C11328,Northern Ireland,30-44,Mid,OWNER_MORTGAGE,True,False,PAPER,val
+C11329,South East,45-59,Mid,RENT,False,True,PAPER,train
+C11330,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11331,Scotland,60+,Mid,OWNER_MORTGAGE,True,False,MIXED,train
+C11332,South West,30-44,Mid,RENT,False,True,PAPER,train
+C11333,North West,30-44,Low,RENT,False,True,PAPER,train
+C11334,East of England,30-44,High,RENT,False,True,DIGITAL,train
+C11335,East of England,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11336,South East,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11337,North West,30-44,High,FAMILY,False,True,DIGITAL,train
+C11338,West Midlands,30-44,Low,RENT,False,True,DIGITAL,train
+C11339,East of England,45-59,Mid,RENT,False,True,PAPER,train
+C11340,London,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11341,London,45-59,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11342,South East,60+,High,FAMILY,False,True,PAPER,train
+C11343,East of England,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11344,South East,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11345,Yorkshire and The Humber,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11346,London,30-44,Low,FAMILY,False,True,DIGITAL,test
+C11347,East Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11348,East Midlands,45-59,Mid,RENT,False,True,DIGITAL,train
+C11349,North West,45-59,Low,RENT,False,True,PAPER,val
+C11350,East of England,60+,Low,RENT,False,True,PAPER,train
+C11351,South East,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11352,London,18-29,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11353,London,30-44,Low,FAMILY,False,False,DIGITAL,train
+C11354,North East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11355,East Midlands,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11356,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11357,Yorkshire and The Humber,18-29,High,RENT,False,True,PAPER,train
+C11358,North West,45-59,Low,RENT,False,True,PAPER,val
+C11359,Scotland,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11360,North West,30-44,Low,RENT,False,True,DIGITAL,train
+C11361,London,60+,Mid,FAMILY,False,True,DIGITAL,train
+C11362,East of England,18-29,Mid,RENT,False,True,DIGITAL,train
+C11363,West Midlands,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11364,South East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11365,South West,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11366,London,30-44,Mid,RENT,False,True,PAPER,train
+C11367,Yorkshire and The Humber,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,test
+C11368,East of England,30-44,Mid,RENT,False,True,PAPER,train
+C11369,Scotland,18-29,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C11370,South East,30-44,Low,RENT,False,True,DIGITAL,val
+C11371,London,45-59,Low,RENT,False,True,DIGITAL,test
+C11372,Northern Ireland,45-59,Mid,RENT,False,False,PAPER,train
+C11373,North East,18-29,Mid,RENT,False,True,DIGITAL,val
+C11374,Yorkshire and The Humber,30-44,High,OWNER_MORTGAGE,True,False,MIXED,val
+C11375,East Midlands,30-44,Mid,RENT,False,False,DIGITAL,train
+C11376,West Midlands,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C11377,Wales,30-44,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11378,South East,60+,Low,RENT,False,True,PAPER,test
+C11379,Yorkshire and The Humber,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11380,South East,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11381,South East,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11382,North West,30-44,Low,RENT,False,True,DIGITAL,train
+C11383,Yorkshire and The Humber,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11384,Scotland,45-59,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11385,South West,60+,High,OWNER_MORTGAGE,True,False,DIGITAL,test
+C11386,Wales,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11387,North West,18-29,Mid,RENT,False,True,DIGITAL,train
+C11388,North East,45-59,Low,RENT,False,True,DIGITAL,train
+C11389,North West,45-59,Mid,RENT,False,True,DIGITAL,train
+C11390,South East,18-29,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11391,South East,60+,Mid,FAMILY,False,True,PAPER,val
+C11392,London,60+,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,val
+C11393,North East,18-29,High,RENT,False,True,PAPER,train
+C11394,Yorkshire and The Humber,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11395,Scotland,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11396,North West,30-44,Low,RENT,False,True,PAPER,train
+C11397,East of England,60+,Low,RENT,False,True,PAPER,train
+C11398,Northern Ireland,30-44,Mid,OWNER_OUTRIGHT,True,False,PAPER,test
+C11399,North West,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11400,South West,45-59,Low,RENT,False,True,MIXED,train
+C11401,South West,30-44,Low,RENT,False,True,DIGITAL,train
+C11402,South East,18-29,Mid,RENT,False,True,DIGITAL,val
+C11403,Northern Ireland,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11404,London,45-59,Mid,FAMILY,False,True,DIGITAL,train
+C11405,London,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11406,East of England,60+,Mid,RENT,False,False,PAPER,train
+C11407,East of England,30-44,Low,RENT,False,True,DIGITAL,train
+C11408,South East,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11409,South West,60+,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11410,North West,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11411,West Midlands,60+,Mid,RENT,False,False,PAPER,train
+C11412,West Midlands,60+,Low,FAMILY,False,False,PAPER,test
+C11413,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11414,South West,45-59,Low,RENT,False,True,DIGITAL,train
+C11415,South West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11416,Northern Ireland,60+,Mid,OWNER_OUTRIGHT,True,False,MIXED,train
+C11417,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,train
+C11418,East of England,30-44,Low,RENT,False,True,PAPER,train
+C11419,North West,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11420,Scotland,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11421,Yorkshire and The Humber,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11422,North West,60+,Low,FAMILY,False,True,PAPER,test
+C11423,East of England,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C11424,North West,30-44,Mid,RENT,False,True,PAPER,train
+C11425,Northern Ireland,30-44,Mid,RENT,False,False,PAPER,train
+C11426,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C11427,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11428,North West,60+,High,FAMILY,False,True,DIGITAL,train
+C11429,London,45-59,Low,OWNER_MORTGAGE,True,False,MIXED,train
+C11430,West Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11431,Northern Ireland,18-29,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11432,South East,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11433,Yorkshire and The Humber,30-44,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11434,West Midlands,30-44,Mid,RENT,False,True,PAPER,train
+C11435,South East,60+,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C11436,London,45-59,Mid,RENT,False,True,DIGITAL,train
+C11437,East Midlands,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11438,Yorkshire and The Humber,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11439,East of England,30-44,Mid,FAMILY,False,True,PAPER,test
+C11440,North West,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11441,South East,18-29,Mid,RENT,False,False,MIXED,test
+C11442,London,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11443,North West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11444,West Midlands,18-29,Mid,RENT,False,True,DIGITAL,val
+C11445,East of England,60+,Low,FAMILY,False,False,DIGITAL,train
+C11446,South West,30-44,Mid,RENT,False,True,MIXED,test
+C11447,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11448,London,60+,Low,RENT,False,True,DIGITAL,train
+C11449,East Midlands,30-44,Mid,RENT,False,True,DIGITAL,test
+C11450,London,45-59,Mid,RENT,False,False,DIGITAL,train
+C11451,Yorkshire and The Humber,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11452,Yorkshire and The Humber,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C11453,South East,18-29,Low,RENT,False,True,DIGITAL,train
+C11454,South West,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11455,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,train
+C11456,West Midlands,60+,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11457,West Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11458,South West,18-29,Low,FAMILY,False,True,DIGITAL,train
+C11459,North West,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11460,West Midlands,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11461,London,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11462,London,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,val
+C11463,Yorkshire and The Humber,45-59,High,FAMILY,False,True,DIGITAL,train
+C11464,London,60+,High,RENT,False,True,DIGITAL,val
+C11465,Scotland,18-29,Mid,RENT,False,True,PAPER,val
+C11466,Scotland,30-44,Low,RENT,False,True,PAPER,train
+C11467,West Midlands,18-29,Low,FAMILY,False,True,PAPER,val
+C11468,South East,60+,Low,RENT,False,False,PAPER,train
+C11469,Scotland,30-44,Mid,RENT,False,True,DIGITAL,test
+C11470,South West,30-44,High,RENT,False,True,DIGITAL,val
+C11471,London,18-29,High,OWNER_MORTGAGE,True,False,PAPER,test
+C11472,East of England,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11473,South East,18-29,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11474,North East,18-29,Low,RENT,False,True,DIGITAL,val
+C11475,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11476,South East,45-59,Mid,RENT,False,True,PAPER,train
+C11477,South East,45-59,Mid,RENT,False,True,DIGITAL,train
+C11478,London,60+,High,FAMILY,False,False,PAPER,train
+C11479,South East,18-29,Mid,RENT,False,True,DIGITAL,train
+C11480,South East,18-29,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11481,South East,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11482,North West,45-59,Low,RENT,False,True,PAPER,train
+C11483,Yorkshire and The Humber,18-29,Low,RENT,False,True,PAPER,train
+C11484,East of England,18-29,Mid,RENT,False,True,DIGITAL,train
+C11485,London,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11486,London,30-44,Low,RENT,False,True,PAPER,train
+C11487,London,45-59,Mid,RENT,False,True,PAPER,test
+C11488,Yorkshire and The Humber,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11489,South East,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11490,Wales,45-59,Mid,FAMILY,False,True,DIGITAL,train
+C11491,Scotland,30-44,Low,RENT,False,True,PAPER,val
+C11492,South East,60+,Mid,OWNER_MORTGAGE,True,False,MIXED,train
+C11493,Wales,30-44,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11494,London,60+,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11495,Yorkshire and The Humber,45-59,Low,FAMILY,False,True,PAPER,train
+C11496,Yorkshire and The Humber,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11497,North West,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11498,London,18-29,High,RENT,False,False,DIGITAL,train
+C11499,East of England,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11500,South East,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11501,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11502,West Midlands,45-59,Mid,FAMILY,False,True,DIGITAL,train
+C11503,London,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11504,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11505,North East,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C11506,South East,45-59,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C11507,West Midlands,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,test
+C11508,London,60+,High,OWNER_OUTRIGHT,True,False,MIXED,train
+C11509,Scotland,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11510,South East,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11511,Scotland,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,test
+C11512,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11513,South West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11514,Scotland,60+,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11515,South East,60+,Mid,RENT,False,True,PAPER,train
+C11516,North West,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11517,Yorkshire and The Humber,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11518,Wales,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11519,North West,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11520,South East,30-44,Mid,OWNER_MORTGAGE,True,False,PAPER,test
+C11521,London,30-44,Mid,RENT,False,True,MIXED,train
+C11522,North West,60+,Low,RENT,False,True,DIGITAL,train
+C11523,East of England,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11524,South East,60+,Low,RENT,False,True,PAPER,train
+C11525,North West,18-29,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11526,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11527,North East,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11528,Wales,45-59,Low,RENT,False,True,MIXED,train
+C11529,North West,60+,Mid,RENT,False,False,PAPER,train
+C11530,East of England,60+,Mid,FAMILY,False,True,PAPER,train
+C11531,South East,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11532,South East,45-59,High,OWNER_MORTGAGE,True,True,PAPER,test
+C11533,East Midlands,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11534,South East,30-44,High,RENT,False,True,MIXED,val
+C11535,South East,30-44,Mid,OWNER_OUTRIGHT,True,False,MIXED,test
+C11536,North West,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11537,East of England,30-44,Mid,FAMILY,False,True,PAPER,train
+C11538,South East,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11539,East Midlands,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11540,South West,45-59,Mid,FAMILY,False,True,DIGITAL,val
+C11541,London,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11542,Yorkshire and The Humber,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11543,Scotland,30-44,Low,RENT,False,True,MIXED,train
+C11544,London,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11545,South East,60+,High,RENT,False,True,PAPER,train
+C11546,North West,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11547,Wales,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11548,Northern Ireland,30-44,High,OWNER_OUTRIGHT,True,False,PAPER,train
+C11549,West Midlands,60+,Low,RENT,False,True,PAPER,train
+C11550,London,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C11551,London,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11552,North West,45-59,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C11553,Wales,30-44,Low,RENT,False,True,PAPER,train
+C11554,London,30-44,Mid,RENT,False,True,DIGITAL,val
+C11555,Wales,18-29,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11556,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11557,East Midlands,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11558,London,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11559,South West,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11560,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11561,London,60+,High,OWNER_MORTGAGE,True,True,PAPER,val
+C11562,North West,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11563,East of England,60+,Low,RENT,False,True,DIGITAL,train
+C11564,Scotland,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11565,Yorkshire and The Humber,45-59,Mid,RENT,False,False,PAPER,train
+C11566,London,30-44,Low,RENT,False,True,DIGITAL,train
+C11567,West Midlands,30-44,High,RENT,False,True,PAPER,test
+C11568,South East,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11569,London,30-44,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11570,Wales,30-44,Low,RENT,False,True,PAPER,train
+C11571,London,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11572,South East,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11573,South West,18-29,Low,OWNER_MORTGAGE,True,False,MIXED,train
+C11574,Scotland,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11575,East of England,18-29,Mid,OWNER_MORTGAGE,True,False,PAPER,test
+C11576,London,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,val
+C11577,East of England,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11578,North West,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11579,London,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11580,London,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11581,South East,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11582,London,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,test
+C11583,Northern Ireland,30-44,Low,RENT,False,False,MIXED,train
+C11584,London,30-44,Low,RENT,False,True,PAPER,train
+C11585,South East,45-59,Mid,RENT,False,True,MIXED,train
+C11586,South East,30-44,Low,RENT,False,True,MIXED,train
+C11587,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11588,Yorkshire and The Humber,60+,Low,RENT,False,False,MIXED,train
+C11589,South West,60+,High,RENT,False,True,PAPER,val
+C11590,North West,45-59,Mid,FAMILY,False,True,DIGITAL,val
+C11591,South East,18-29,Low,RENT,False,True,DIGITAL,train
+C11592,South East,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C11593,North West,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11594,South East,30-44,Mid,RENT,False,True,PAPER,val
+C11595,South East,60+,High,OWNER_MORTGAGE,True,True,PAPER,test
+C11596,London,30-44,Low,RENT,False,False,DIGITAL,test
+C11597,West Midlands,18-29,Mid,RENT,False,True,MIXED,train
+C11598,West Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11599,North East,60+,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11600,South West,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11601,Scotland,60+,Mid,RENT,False,True,PAPER,val
+C11602,North West,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11603,South West,30-44,Mid,RENT,False,True,PAPER,train
+C11604,London,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11605,London,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11606,Scotland,60+,Low,FAMILY,False,False,DIGITAL,train
+C11607,Yorkshire and The Humber,45-59,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11608,West Midlands,18-29,High,RENT,False,True,PAPER,train
+C11609,Scotland,30-44,Low,OWNER_OUTRIGHT,True,False,PAPER,train
+C11610,South East,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11611,South East,18-29,Low,OWNER_OUTRIGHT,True,True,MIXED,train
+C11612,West Midlands,30-44,Mid,FAMILY,False,True,MIXED,train
+C11613,London,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C11614,North West,60+,Low,RENT,False,True,PAPER,train
+C11615,London,45-59,Low,RENT,False,True,PAPER,test
+C11616,East of England,18-29,Mid,FAMILY,False,True,MIXED,train
+C11617,South West,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11618,Northern Ireland,30-44,Mid,RENT,False,False,DIGITAL,test
+C11619,Scotland,30-44,Low,RENT,False,True,PAPER,train
+C11620,Northern Ireland,60+,Low,OWNER_OUTRIGHT,True,False,PAPER,train
+C11621,East Midlands,60+,Mid,RENT,False,True,PAPER,val
+C11622,South East,30-44,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11623,East Midlands,45-59,Low,RENT,False,True,PAPER,train
+C11624,London,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11625,West Midlands,18-29,High,RENT,False,True,DIGITAL,train
+C11626,West Midlands,30-44,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11627,Yorkshire and The Humber,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11628,North East,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11629,North West,30-44,Low,RENT,False,True,DIGITAL,test
+C11630,Yorkshire and The Humber,60+,Low,RENT,False,True,DIGITAL,train
+C11631,West Midlands,18-29,Mid,RENT,False,True,DIGITAL,train
+C11632,London,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11633,London,30-44,High,RENT,False,True,PAPER,test
+C11634,South West,30-44,Mid,RENT,False,True,MIXED,train
+C11635,South East,18-29,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11636,Yorkshire and The Humber,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11637,South East,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,val
+C11638,London,30-44,High,RENT,False,True,DIGITAL,val
+C11639,Wales,60+,Mid,RENT,False,True,PAPER,train
+C11640,Wales,30-44,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C11641,East of England,18-29,High,RENT,False,True,DIGITAL,train
+C11642,London,30-44,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11643,North East,18-29,Mid,FAMILY,False,True,MIXED,train
+C11644,London,60+,Low,OWNER_MORTGAGE,True,True,PAPER,test
+C11645,London,60+,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11646,South West,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11647,London,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C11648,East of England,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11649,Northern Ireland,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11650,North West,18-29,Mid,RENT,False,True,DIGITAL,train
+C11651,East of England,60+,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11652,London,30-44,Low,RENT,False,True,DIGITAL,test
+C11653,North West,45-59,Low,RENT,False,True,PAPER,val
+C11654,Wales,18-29,High,RENT,False,True,DIGITAL,test
+C11655,East Midlands,30-44,Mid,RENT,False,True,MIXED,train
+C11656,South East,30-44,High,RENT,False,True,DIGITAL,train
+C11657,East Midlands,30-44,Low,RENT,False,True,DIGITAL,train
+C11658,East Midlands,45-59,Mid,RENT,False,True,DIGITAL,train
+C11659,Yorkshire and The Humber,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11660,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11661,West Midlands,18-29,Low,OWNER_MORTGAGE,True,True,MIXED,val
+C11662,North West,30-44,Mid,RENT,False,True,DIGITAL,train
+C11663,Wales,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11664,Northern Ireland,60+,High,RENT,False,False,DIGITAL,train
+C11665,West Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11666,West Midlands,18-29,Low,FAMILY,False,True,PAPER,train
+C11667,North West,30-44,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11668,South East,30-44,High,RENT,False,True,PAPER,train
+C11669,London,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11670,North East,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11671,East Midlands,18-29,Low,RENT,False,True,DIGITAL,train
+C11672,South West,60+,Low,RENT,False,True,DIGITAL,test
+C11673,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11674,Wales,45-59,High,RENT,False,True,DIGITAL,train
+C11675,Yorkshire and The Humber,45-59,Low,RENT,False,False,PAPER,train
+C11676,West Midlands,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11677,Scotland,45-59,High,RENT,False,True,DIGITAL,train
+C11678,South West,18-29,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11679,South West,45-59,Mid,RENT,False,True,PAPER,val
+C11680,West Midlands,18-29,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11681,North West,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11682,East of England,18-29,Mid,RENT,False,False,DIGITAL,test
+C11683,Scotland,45-59,Low,OWNER_MORTGAGE,True,False,PAPER,test
+C11684,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11685,East of England,45-59,Mid,FAMILY,False,True,MIXED,test
+C11686,West Midlands,45-59,Mid,RENT,False,True,PAPER,train
+C11687,Yorkshire and The Humber,18-29,Mid,RENT,False,True,DIGITAL,train
+C11688,Scotland,30-44,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11689,Wales,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,test
+C11690,Wales,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,test
+C11691,London,45-59,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11692,London,45-59,Low,RENT,False,True,DIGITAL,test
+C11693,Scotland,60+,Low,RENT,False,True,PAPER,train
+C11694,South East,18-29,Mid,RENT,False,True,DIGITAL,train
+C11695,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11696,Scotland,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11697,South East,30-44,Low,RENT,False,False,DIGITAL,train
+C11698,South West,60+,Mid,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11699,South East,60+,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11700,North West,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,val
+C11701,East Midlands,60+,Mid,RENT,False,True,MIXED,train
+C11702,East of England,18-29,Mid,RENT,False,True,DIGITAL,test
+C11703,Yorkshire and The Humber,45-59,Mid,OWNER_OUTRIGHT,True,False,MIXED,val
+C11704,Yorkshire and The Humber,30-44,Mid,RENT,False,True,DIGITAL,train
+C11705,East of England,60+,High,OWNER_MORTGAGE,True,True,PAPER,val
+C11706,North East,30-44,Low,RENT,False,True,PAPER,train
+C11707,London,60+,High,FAMILY,False,True,MIXED,val
+C11708,East of England,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11709,South East,30-44,Low,OWNER_OUTRIGHT,True,True,PAPER,test
+C11710,West Midlands,18-29,Low,RENT,False,False,DIGITAL,train
+C11711,London,18-29,High,OWNER_MORTGAGE,True,True,PAPER,val
+C11712,Yorkshire and The Humber,30-44,Mid,RENT,False,True,PAPER,train
+C11713,East of England,30-44,Low,RENT,False,True,PAPER,train
+C11714,East of England,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11715,Yorkshire and The Humber,30-44,Mid,FAMILY,False,False,DIGITAL,train
+C11716,Northern Ireland,30-44,Mid,OWNER_MORTGAGE,True,False,DIGITAL,val
+C11717,Yorkshire and The Humber,30-44,Mid,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11718,London,45-59,Mid,RENT,False,True,MIXED,test
+C11719,South West,30-44,High,OWNER_MORTGAGE,True,True,PAPER,test
+C11720,Yorkshire and The Humber,45-59,Low,RENT,False,True,DIGITAL,val
+C11721,Scotland,30-44,Mid,FAMILY,False,True,PAPER,val
+C11722,London,60+,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11723,Scotland,60+,High,OWNER_MORTGAGE,True,True,PAPER,test
+C11724,London,45-59,Low,RENT,False,True,DIGITAL,val
+C11725,London,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11726,East of England,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11727,Wales,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11728,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,val
+C11729,West Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11730,South East,45-59,High,RENT,False,True,PAPER,train
+C11731,Wales,45-59,Low,RENT,False,False,DIGITAL,train
+C11732,North East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11733,Scotland,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11734,Yorkshire and The Humber,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11735,South West,18-29,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11736,East Midlands,18-29,Mid,RENT,False,True,PAPER,train
+C11737,South West,30-44,Low,RENT,False,True,MIXED,train
+C11738,South East,30-44,Low,RENT,False,True,PAPER,val
+C11739,South West,60+,Mid,RENT,False,False,MIXED,val
+C11740,North West,45-59,Mid,RENT,False,True,PAPER,val
+C11741,South East,18-29,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11742,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11743,North West,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11744,South West,18-29,Low,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C11745,Wales,30-44,Mid,RENT,False,True,DIGITAL,train
+C11746,East of England,45-59,Mid,RENT,False,False,DIGITAL,train
+C11747,East of England,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11748,Wales,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11749,North East,45-59,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11750,Scotland,60+,Mid,FAMILY,False,True,DIGITAL,train
+C11751,Wales,45-59,Mid,RENT,False,True,PAPER,test
+C11752,London,45-59,Mid,FAMILY,False,True,DIGITAL,train
+C11753,South West,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11754,North East,30-44,High,RENT,False,True,DIGITAL,test
+C11755,North East,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11756,Wales,45-59,Low,RENT,False,True,DIGITAL,test
+C11757,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11758,North East,30-44,High,OWNER_OUTRIGHT,True,True,MIXED,test
+C11759,Wales,18-29,Low,RENT,False,True,DIGITAL,train
+C11760,Yorkshire and The Humber,18-29,Mid,RENT,False,False,PAPER,train
+C11761,West Midlands,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11762,East Midlands,45-59,Mid,RENT,False,True,DIGITAL,train
+C11763,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,val
+C11764,West Midlands,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11765,London,18-29,High,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11766,South West,18-29,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11767,North East,60+,Mid,OWNER_OUTRIGHT,True,True,MIXED,test
+C11768,Wales,30-44,Mid,RENT,False,False,DIGITAL,test
+C11769,North East,18-29,Low,FAMILY,False,False,DIGITAL,train
+C11770,South East,45-59,Low,RENT,False,True,PAPER,val
+C11771,South East,45-59,Low,RENT,False,True,PAPER,val
+C11772,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11773,London,18-29,High,OWNER_OUTRIGHT,True,True,PAPER,train
+C11774,South East,45-59,Mid,RENT,False,True,PAPER,train
+C11775,West Midlands,30-44,Mid,RENT,False,True,PAPER,train
+C11776,Northern Ireland,60+,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11777,West Midlands,60+,Low,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11778,North West,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11779,Scotland,45-59,Low,OWNER_MORTGAGE,True,False,MIXED,val
+C11780,South West,45-59,High,OWNER_OUTRIGHT,True,True,MIXED,test
+C11781,North East,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11782,South West,18-29,Mid,RENT,False,True,MIXED,test
+C11783,South East,45-59,Mid,RENT,False,True,PAPER,train
+C11784,South West,45-59,High,RENT,False,True,PAPER,train
+C11785,West Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11786,North West,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11787,South West,30-44,Mid,RENT,False,True,DIGITAL,train
+C11788,East of England,60+,Mid,FAMILY,False,True,PAPER,train
+C11789,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,False,MIXED,train
+C11790,Scotland,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11791,Northern Ireland,45-59,Mid,OWNER_MORTGAGE,True,False,PAPER,val
+C11792,South East,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11793,South East,45-59,Low,RENT,False,True,DIGITAL,train
+C11794,North West,30-44,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C11795,West Midlands,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11796,East Midlands,60+,Low,RENT,False,True,PAPER,val
+C11797,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11798,Yorkshire and The Humber,60+,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11799,South East,30-44,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11800,East of England,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C11801,West Midlands,18-29,Mid,RENT,False,True,PAPER,train
+C11802,South West,60+,Low,RENT,False,True,PAPER,val
+C11803,West Midlands,18-29,Mid,RENT,False,True,DIGITAL,train
+C11804,East of England,30-44,Low,RENT,False,False,DIGITAL,train
+C11805,South East,30-44,Mid,RENT,False,True,DIGITAL,train
+C11806,Scotland,18-29,Low,FAMILY,False,True,DIGITAL,train
+C11807,Scotland,18-29,Low,FAMILY,False,True,MIXED,train
+C11808,Scotland,18-29,Mid,RENT,False,True,DIGITAL,train
+C11809,West Midlands,45-59,High,OWNER_OUTRIGHT,True,False,PAPER,train
+C11810,South West,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11811,London,30-44,Mid,FAMILY,False,True,DIGITAL,train
+C11812,London,30-44,Low,OWNER_MORTGAGE,True,False,PAPER,test
+C11813,London,60+,Mid,RENT,False,True,DIGITAL,train
+C11814,Northern Ireland,30-44,Low,RENT,False,False,DIGITAL,train
+C11815,Yorkshire and The Humber,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11816,West Midlands,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11817,South East,45-59,Mid,RENT,False,True,DIGITAL,train
+C11818,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11819,North East,18-29,High,FAMILY,False,True,DIGITAL,train
+C11820,South East,30-44,High,FAMILY,False,True,DIGITAL,train
+C11821,Yorkshire and The Humber,45-59,Mid,RENT,False,False,DIGITAL,train
+C11822,East Midlands,18-29,Low,RENT,False,True,PAPER,train
+C11823,Scotland,18-29,Mid,FAMILY,False,False,DIGITAL,train
+C11824,London,18-29,Mid,RENT,False,True,PAPER,train
+C11825,South East,30-44,Low,RENT,False,True,DIGITAL,train
+C11826,North West,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11827,South West,18-29,High,OWNER_MORTGAGE,True,True,MIXED,val
+C11828,South East,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11829,West Midlands,18-29,Low,FAMILY,False,True,PAPER,train
+C11830,North West,30-44,Mid,RENT,False,True,DIGITAL,train
+C11831,South East,18-29,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C11832,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,test
+C11833,West Midlands,60+,Mid,RENT,False,True,PAPER,train
+C11834,West Midlands,60+,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C11835,Yorkshire and The Humber,60+,Mid,RENT,False,True,PAPER,val
+C11836,Wales,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11837,South East,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11838,South West,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11839,East of England,60+,Mid,RENT,False,True,MIXED,train
+C11840,East of England,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C11841,London,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11842,South East,60+,High,OWNER_MORTGAGE,True,True,MIXED,train
+C11843,South West,18-29,Mid,RENT,False,True,MIXED,train
+C11844,Yorkshire and The Humber,30-44,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C11845,East Midlands,30-44,Low,RENT,False,True,DIGITAL,train
+C11846,Scotland,45-59,High,OWNER_MORTGAGE,True,False,PAPER,train
+C11847,Scotland,18-29,High,RENT,False,True,DIGITAL,train
+C11848,London,30-44,High,RENT,False,True,DIGITAL,test
+C11849,East of England,30-44,Mid,RENT,False,True,PAPER,train
+C11850,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,test
+C11851,Scotland,45-59,High,FAMILY,False,True,DIGITAL,train
+C11852,Scotland,45-59,Mid,RENT,False,True,PAPER,train
+C11853,South East,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C11854,South East,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11855,South West,60+,Mid,FAMILY,False,False,DIGITAL,val
+C11856,East Midlands,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C11857,London,18-29,Mid,RENT,False,True,DIGITAL,train
+C11858,South East,45-59,Low,RENT,False,True,DIGITAL,test
+C11859,West Midlands,18-29,Mid,RENT,False,True,PAPER,val
+C11860,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11861,West Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11862,Scotland,30-44,Mid,FAMILY,False,True,PAPER,val
+C11863,East of England,30-44,High,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C11864,West Midlands,45-59,Mid,RENT,False,True,DIGITAL,train
+C11865,East Midlands,45-59,High,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11866,North East,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11867,Scotland,45-59,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11868,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11869,East Midlands,45-59,Low,RENT,False,True,PAPER,train
+C11870,South East,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11871,East of England,30-44,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11872,Scotland,30-44,Mid,RENT,False,False,PAPER,train
+C11873,North West,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11874,South East,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11875,Yorkshire and The Humber,18-29,Mid,RENT,False,False,DIGITAL,train
+C11876,South East,60+,Mid,RENT,False,True,MIXED,train
+C11877,Wales,18-29,Low,RENT,False,True,PAPER,train
+C11878,Yorkshire and The Humber,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11879,London,60+,Low,OWNER_OUTRIGHT,True,True,PAPER,train
+C11880,Scotland,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11881,West Midlands,18-29,Mid,RENT,False,True,PAPER,val
+C11882,West Midlands,30-44,Mid,RENT,False,True,DIGITAL,test
+C11883,East of England,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11884,Scotland,30-44,High,RENT,False,True,MIXED,train
+C11885,North West,45-59,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C11886,London,45-59,Low,RENT,False,True,PAPER,train
+C11887,South West,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,test
+C11888,North West,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11889,East Midlands,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11890,Scotland,18-29,Low,RENT,False,True,DIGITAL,train
+C11891,South West,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11892,Yorkshire and The Humber,18-29,Low,RENT,False,True,DIGITAL,test
+C11893,South West,45-59,Mid,OWNER_MORTGAGE,True,True,MIXED,test
+C11894,South East,60+,Low,RENT,False,True,PAPER,test
+C11895,East of England,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,train
+C11896,Wales,18-29,Mid,RENT,False,True,DIGITAL,train
+C11897,Scotland,60+,Low,RENT,False,True,PAPER,train
+C11898,Wales,18-29,Low,RENT,False,False,PAPER,train
+C11899,East Midlands,18-29,Mid,RENT,False,True,PAPER,train
+C11900,South East,45-59,Low,RENT,False,True,PAPER,train
+C11901,North East,45-59,Mid,RENT,False,True,MIXED,train
+C11902,Scotland,30-44,Low,OWNER_OUTRIGHT,True,True,MIXED,val
+C11903,Scotland,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11904,West Midlands,30-44,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11905,West Midlands,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11906,East of England,18-29,High,RENT,False,True,PAPER,test
+C11907,North West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11908,London,18-29,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11909,South West,18-29,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11910,East Midlands,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11911,Northern Ireland,60+,Mid,OWNER_OUTRIGHT,True,False,MIXED,train
+C11912,South East,60+,Low,RENT,False,True,PAPER,train
+C11913,East of England,18-29,Mid,RENT,False,True,DIGITAL,train
+C11914,South West,45-59,High,RENT,False,True,DIGITAL,test
+C11915,Yorkshire and The Humber,45-59,High,OWNER_OUTRIGHT,True,True,PAPER,test
+C11916,Yorkshire and The Humber,45-59,Mid,RENT,False,True,PAPER,train
+C11917,South East,18-29,High,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11918,East of England,30-44,Mid,FAMILY,False,False,MIXED,train
+C11919,East Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11920,South West,45-59,Low,RENT,False,True,DIGITAL,train
+C11921,Yorkshire and The Humber,30-44,Low,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C11922,West Midlands,18-29,Mid,FAMILY,False,True,PAPER,train
+C11923,Yorkshire and The Humber,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11924,South East,45-59,High,OWNER_OUTRIGHT,True,True,MIXED,train
+C11925,West Midlands,60+,Low,RENT,False,True,PAPER,train
+C11926,Wales,30-44,Mid,RENT,False,True,PAPER,train
+C11927,South West,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,val
+C11928,East of England,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11929,South East,30-44,Mid,RENT,False,True,MIXED,train
+C11930,Yorkshire and The Humber,45-59,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11931,North West,60+,High,OWNER_MORTGAGE,True,True,PAPER,train
+C11932,London,45-59,High,OWNER_MORTGAGE,True,False,PAPER,train
+C11933,South East,45-59,Mid,OWNER_OUTRIGHT,True,True,MIXED,val
+C11934,South East,60+,Mid,OWNER_OUTRIGHT,True,False,PAPER,train
+C11935,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11936,South West,60+,Low,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11937,North West,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11938,East Midlands,60+,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11939,London,45-59,Low,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11940,North East,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,test
+C11941,South East,30-44,Mid,OWNER_MORTGAGE,True,True,PAPER,test
+C11942,Wales,30-44,Mid,RENT,False,True,DIGITAL,val
+C11943,South West,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11944,South West,45-59,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11945,East Midlands,30-44,High,RENT,False,True,MIXED,val
+C11946,Yorkshire and The Humber,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11947,South East,18-29,Mid,RENT,False,True,MIXED,test
+C11948,Yorkshire and The Humber,18-29,Low,FAMILY,False,True,DIGITAL,val
+C11949,East Midlands,18-29,High,FAMILY,False,True,PAPER,train
+C11950,Scotland,60+,Mid,OWNER_MORTGAGE,True,True,PAPER,train
+C11951,Scotland,30-44,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11952,London,60+,Mid,OWNER_MORTGAGE,True,True,MIXED,train
+C11953,North West,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11954,South East,30-44,High,RENT,False,True,DIGITAL,train
+C11955,East Midlands,30-44,Low,RENT,False,True,PAPER,train
+C11956,West Midlands,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11957,West Midlands,30-44,Mid,RENT,False,True,MIXED,train
+C11958,East of England,30-44,Low,RENT,False,False,PAPER,train
+C11959,London,30-44,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11960,East Midlands,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11961,East Midlands,60+,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C11962,Yorkshire and The Humber,60+,Mid,RENT,False,True,PAPER,train
+C11963,Wales,45-59,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11964,East of England,30-44,High,OWNER_MORTGAGE,True,False,DIGITAL,train
+C11965,Yorkshire and The Humber,60+,High,OWNER_OUTRIGHT,True,True,DIGITAL,val
+C11966,South West,30-44,Mid,RENT,False,True,DIGITAL,test
+C11967,West Midlands,60+,Low,RENT,False,True,PAPER,train
+C11968,East of England,18-29,Mid,RENT,False,True,DIGITAL,train
+C11969,West Midlands,18-29,Low,RENT,False,True,DIGITAL,train
+C11970,South East,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,val
+C11971,London,45-59,Mid,RENT,False,True,DIGITAL,train
+C11972,London,30-44,Low,RENT,False,True,DIGITAL,val
+C11973,Wales,60+,Mid,OWNER_MORTGAGE,True,False,PAPER,test
+C11974,West Midlands,45-59,Mid,OWNER_MORTGAGE,True,False,MIXED,train
+C11975,Scotland,18-29,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11976,Scotland,45-59,High,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11977,East Midlands,45-59,Mid,RENT,False,True,DIGITAL,test
+C11978,West Midlands,30-44,Low,OWNER_OUTRIGHT,True,False,DIGITAL,train
+C11979,Wales,45-59,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11980,West Midlands,45-59,High,RENT,False,False,DIGITAL,train
+C11981,Yorkshire and The Humber,18-29,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11982,West Midlands,45-59,Low,OWNER_MORTGAGE,True,True,PAPER,val
+C11983,West Midlands,18-29,Low,FAMILY,False,False,MIXED,test
+C11984,Wales,18-29,Mid,OWNER_MORTGAGE,True,False,PAPER,train
+C11985,Scotland,18-29,Mid,RENT,False,True,PAPER,train
+C11986,East of England,60+,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11987,Northern Ireland,60+,Low,FAMILY,False,False,DIGITAL,train
+C11988,East of England,18-29,Mid,FAMILY,False,True,DIGITAL,train
+C11989,Yorkshire and The Humber,30-44,Mid,OWNER_MORTGAGE,True,True,DIGITAL,train
+C11990,London,45-59,Mid,OWNER_OUTRIGHT,True,True,PAPER,train
+C11991,South West,30-44,Mid,OWNER_OUTRIGHT,True,True,MIXED,train
+C11992,North East,18-29,Low,RENT,False,True,DIGITAL,train
+C11993,East of England,30-44,Mid,RENT,False,True,DIGITAL,test
+C11994,East Midlands,30-44,Mid,OWNER_OUTRIGHT,True,True,DIGITAL,train
+C11995,North East,30-44,Low,OWNER_MORTGAGE,True,True,MIXED,train
+C11996,East of England,30-44,Low,RENT,False,True,DIGITAL,train
+C11997,South East,18-29,Mid,RENT,False,True,PAPER,train
+C11998,Scotland,18-29,Mid,RENT,False,True,DIGITAL,train
+C11999,Scotland,60+,Mid,OWNER_MORTGAGE,True,False,DIGITAL,val
+C12000,Wales,18-29,Mid,FAMILY,False,True,DIGITAL,test
