@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.ui import estimate_label, header
+from ui import estimate_label, header
 
 header(
     "Customer view",

@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.ui import DOCS, header, mermaid
+from ui import DOCS, header, mermaid
 
 header("Architecture", "Source: docs/architecture.mmd")
 code = (DOCS / "architecture.mmd").read_text(encoding="utf-8")

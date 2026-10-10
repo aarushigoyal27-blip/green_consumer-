@@ -8,15 +8,9 @@ streamlit run app.py
 ```
 
 ## Layout
-```
-app.py            navigation (st.navigation)
-views/            one file per page – placeholders for now
-src/ui.py         shared helpers (banner, doc reader, Mermaid renderer)
-docs/             data_card, label_rules, eval_report, responsible_ai_note (.md)
-                  architecture.mmd (Mermaid, rendered on the Architecture page)
-```
+Flat: all `.py` pages, `ui.py`, and the `.md`/`.mmd` docs sit next to `app.py`. Main file: `app.py`.
 
 ## Wiring real work in
-1. Replace mock values in `views/*.py` with calls into `src/` modules.
+1. Replace mock values in the page `.py` files with calls into your own modules.
 2. Remove a page's placeholder banner (`header(..., todo=...)`) once it shows real output.
 3. Fill `docs/*.md`; they render in-app and are submission items.

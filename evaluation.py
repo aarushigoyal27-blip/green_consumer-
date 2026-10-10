@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-from src.ui import header, read_doc
+from ui import header, read_doc
 
 header("Evaluation", "Validation-set metrics vs a simple baseline", todo="Populate from the eval script's output files.")
 

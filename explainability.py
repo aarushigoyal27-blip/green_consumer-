@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.ui import core_rule, header, read_doc
+from ui import core_rule, header, read_doc
 
 header("Explainability & Responsible AI", "Privacy, bias, hallucination, oversight, limitations")
 core_rule()

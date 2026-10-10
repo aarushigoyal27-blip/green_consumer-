@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.ui import header, read_doc
+from ui import header, read_doc
 
 header("Data & labels", "Sources, schema, label rules, splits", todo="Fill docs/data_card.md and docs/label_rules.md.")
 

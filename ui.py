@@ -4,8 +4,8 @@ from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 
-ROOT = Path(__file__).resolve().parent.parent
-DOCS = ROOT / "docs"
+ROOT = Path(__file__).resolve().parent
+DOCS = ROOT
 
 CORE_RULE = (
     "**Core rule:** ML models predict · the carbon engine / calculators compute impact · "

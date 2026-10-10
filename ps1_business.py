@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-from src.ui import header
+from ui import header
 
 header(
     "Business dashboard",

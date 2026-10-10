@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.ui import core_rule, header
+from ui import core_rule, header
 
 header("🌱 Green Customer Insights Platform", "Megathon X: Singularity · PS1 · Lloyds")
 core_rule()
@@ -9,8 +9,8 @@ st.write(
     "(EV Finance, Green Home, Solar, Paperless), with estimated impact and clear explanations."
 )
 c1, c2 = st.columns(2)
-c1.page_link("views/ps1_customer.py", label="Customer view →")
-c2.page_link("views/ps1_business.py", label="Business dashboard →")
+c1.page_link("ps1_customer.py", label="Customer view →")
+c2.page_link("ps1_business.py", label="Business dashboard →")
 
 st.divider()
 st.subheader("Submission checklist")
